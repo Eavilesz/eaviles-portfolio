@@ -1,18 +1,36 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Book, Code, Palette, ChevronRight } from 'lucide-react';
+import { ChevronRight } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
+import { FaReact } from 'react-icons/fa';
+import { FaMeta } from 'react-icons/fa6';
 
 const certifications = [
-  { name: 'Advanced React Techniques', icon: Code, url: 'https://course1.com' },
   {
-    name: 'UI/UX Design Fundamentals',
-    icon: Palette,
-    url: 'https://course2.com',
+    name: 'PROGRAMMING WITH JAVASCRIPT',
+    icon: FaMeta,
+    iconColor: ' #0082fb',
+    url: 'https://coursera.org/share/c9e93783fed14b83723025db5815b500',
   },
-  { name: 'Full Stack Development', icon: Book, url: 'https://course3.com' },
-  // Add more certifications as needed
+  {
+    name: 'INTRODUCTION TO FRONTEND DEVELOPMENT',
+    icon: FaMeta,
+    iconColor: ' #0082fb',
+    url: 'https://coursera.org/share/c9e93783fed14b83723025db5815b500',
+  },
+  {
+    name: 'VERSION CONTROL',
+    icon: FaMeta,
+    iconColor: ' #0082fb',
+    url: 'https://coursera.org/share/1d493a8c0c52b04c9dd3dc8ac56b03e9',
+  },
+  {
+    name: 'FULL STACK MERN',
+    icon: FaReact,
+    iconColor: '#00d8ff',
+    url: 'https://www.credly.com/badges/a948430c-9749-46b4-9d3f-00bde1d3f971/linked_in_profile',
+  },
 ];
 
 export default function Certifications() {
@@ -32,10 +50,14 @@ export default function Certifications() {
             transition={{ duration: 0.5, delay: index * 0.1 }}
           >
             <Card className="bg-gray-800 border-gray-700 hover:bg-gray-700 transition-colors duration-300">
-              <CardContent className="flex items-center p-4">
-                <cert.icon className="w-8 h-8 mr-3 text-blue-400" />
+              <CardContent className="flex items-center p-4 h-20">
+                <cert.icon
+                  size={'2rem'}
+                  color={cert.iconColor}
+                  className="mr-3 h-8"
+                />
                 <div className="flex-grow">
-                  <h3 className="font-semibold">{cert.name}</h3>
+                  <h3 className="font-semibold text-zinc-200">{cert.name}</h3>
                 </div>
                 <ChevronRight className="w-5 h-5 text-gray-400" />
               </CardContent>

@@ -13,29 +13,40 @@ import {
   CardTitle,
 } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
+import { RiNextjsLine } from 'react-icons/ri';
+import { RiJavascriptLine } from 'react-icons/ri';
+import { TbBrandMongodb } from 'react-icons/tb';
+import { RiTailwindCssFill } from 'react-icons/ri';
+
+import spaceNews from '../../assets/space-news.png';
+import sttoria from '../../assets/sttoria.png';
 
 const projects = [
   {
-    title: 'Project 1',
-    description: 'A brief description of project 1',
-    image: '/placeholder.svg?height=200&width=300',
+    title: 'Space News',
+    description:
+      'A web app that shows the latest news related to space! This app consists in a Nextjs Frontend and Backend, that relies on a Mongo DB Database and a Vercel cron job that updates them twice a day.',
+    image: spaceNews,
     tags: [
-      { name: 'React', icon: '/path/to/react-icon.svg' },
-      { name: 'JavaScript', icon: '/path/to/javascript-icon.svg' },
+      { name: 'Nextjs', icon: RiNextjsLine },
+      { name: 'JavaScript', icon: RiJavascriptLine, iconColor: '#F0DB4F' },
+      { name: 'MongoDB', icon: TbBrandMongodb, iconColor: '#3FA037' },
+      { name: 'Tailwind CSS', icon: RiTailwindCssFill, iconColor: '#38bdf9' },
     ],
-    url: 'https://project1.com',
+    url: 'https://news-two-neon.vercel.app/',
   },
   {
-    title: 'Project 2',
-    description: 'A brief description of project 2',
-    image: '/placeholder.svg?height=200&width=300',
+    title: 'Sttoria Landing Page',
+    description: 'Elegant landing page of the Sttoria Photography Studio.',
+    image: sttoria,
     tags: [
-      { name: 'MongoDB', icon: '/path/to/mongodb-icon.svg' },
-      { name: 'Node.js', icon: '/path/to/nodejs-icon.svg' },
+      { name: 'Nextjs', icon: RiNextjsLine },
+      { name: 'JavaScript', icon: RiJavascriptLine, iconColor: '#F0DB4F' },
+      { name: 'Tailwind CSS', icon: RiTailwindCssFill, iconColor: '#38bdf9' },
     ],
-    url: 'https://project2.com',
+
+    url: 'https://sttoria.vercel.app/',
   },
-  // Add more projects as needed
 ];
 
 export default function Projects() {
@@ -53,7 +64,7 @@ export default function Projects() {
             transition={{ duration: 0.5, delay: index * 0.1 }}
           >
             <Card
-              className="bg-gray-800 border-gray-700 overflow-hidden"
+              className="bg-gray-800 border-gray-700 overflow-hidden h-full"
               onMouseEnter={() => setHoveredProject(index)}
               onMouseLeave={() => setHoveredProject(null)}
             >
@@ -71,23 +82,20 @@ export default function Projects() {
                   className="w-full object-cover"
                 />
                 <CardHeader>
-                  <CardTitle>{project.title}</CardTitle>
-                  <CardDescription>{project.description}</CardDescription>
+                  <CardTitle className="text-white">{project.title}</CardTitle>
+                  <CardDescription className="h-16">
+                    {project.description}
+                  </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-2 h-20">
                     {project.tags.map((tag) => (
                       <Badge
                         key={tag.name}
                         variant="secondary"
-                        className="flex items-center gap-1"
+                        className="flex items-center gap-1 h-min"
                       >
-                        <Image
-                          src={tag.icon}
-                          alt={tag.name}
-                          width={16}
-                          height={16}
-                        />
+                        <tag.icon color={tag.iconColor} size={'22px'} />
                         {tag.name}
                       </Badge>
                     ))}
