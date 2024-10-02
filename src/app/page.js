@@ -59,7 +59,7 @@ export default function Home() {
       >
         <Image
           src={profilePic}
-          alt="Your Name"
+          alt="Ernesto Aviles"
           width={150}
           height={150}
           className="rounded-full mb-4"
