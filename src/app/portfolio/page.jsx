@@ -19,13 +19,13 @@ import { TbBrandMongodb } from 'react-icons/tb';
 import { RiTailwindCssFill } from 'react-icons/ri';
 
 import spaceNews from '../../assets/space-news.png';
-import sttoria from '../../assets/sttoria.png';
+import sttoria from '../../assets/sttoria.avif';
 
 const projects = [
   {
     title: 'Space News',
     description:
-      'A web app that shows the latest news related to space! This app consists in a Nextjs Frontend and Backend, that relies on a Mongo DB Database and a Vercel cron job that updates them twice a day.',
+      'A web app that shows the latest news related to space! This app consists in a Nextjs Frontend and Backend, that relies on a Mongo DB Database and a Vercel cron job that updates the news twice a day.',
     image: spaceNews,
     tags: [
       { name: 'Nextjs', icon: RiNextjsLine },
@@ -37,7 +37,8 @@ const projects = [
   },
   {
     title: 'Sttoria Landing Page',
-    description: 'Elegant landing page of the Sttoria Photography Studio.',
+    description:
+      'Elegant landing page of the Sttoria Photography Studio. Showcasing their services with a bento-style image gallery and a minimalistic video player.',
     image: sttoria,
     tags: [
       { name: 'Nextjs', icon: RiNextjsLine },
@@ -79,16 +80,18 @@ export default function Projects() {
                   alt={project.title}
                   width={300}
                   height={200}
-                  className="w-full object-cover"
+                  className="w-full object-cover h-64"
                 />
                 <CardHeader>
-                  <CardTitle className="text-white">{project.title}</CardTitle>
-                  <CardDescription className="h-16">
+                  <CardTitle className="text-white mb-2">
+                    {project.title}
+                  </CardTitle>
+                  <CardDescription className="min-h-20">
                     {project.description}
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <div className="flex flex-wrap gap-2 h-20">
+                  <div className="flex flex-wrap gap-3 min-h-20">
                     {project.tags.map((tag) => (
                       <Badge
                         key={tag.name}

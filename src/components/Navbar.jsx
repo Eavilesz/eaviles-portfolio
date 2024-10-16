@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 const navItems = [
   { name: 'Home', path: '/' },
-  { name: 'Projects', path: '/projects' },
+  { name: 'Portfolio', path: '/portfolio' },
   { name: 'Certifications', path: '/certifications' },
 ];
 
@@ -16,7 +16,7 @@ export default function Navbar() {
   return (
     <nav className="bg-gray-900 text-white py-4">
       <div className="container mx-auto px-4">
-        <ul className="flex justify-center space-x-6">
+        <ul className="flex justify-center space-x-6 text-2xl">
           {navItems.map((item) => (
             <li key={item.name}>
               <Link href={item.path} className="relative">
