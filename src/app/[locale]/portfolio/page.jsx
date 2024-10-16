@@ -18,8 +18,9 @@ import { RiJavascriptLine } from 'react-icons/ri';
 import { TbBrandMongodb } from 'react-icons/tb';
 import { RiTailwindCssFill } from 'react-icons/ri';
 
-import spaceNews from '../../assets/space-news.png';
-import sttoria from '../../assets/sttoria.avif';
+import spaceNews from '../../../assets/space-news.png';
+
+import sttoria from '../../../assets/sttoria.avif';
 
 const projects = [
   {

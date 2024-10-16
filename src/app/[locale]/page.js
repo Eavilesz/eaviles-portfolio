@@ -10,8 +10,9 @@ import { TbBrandTypescript } from 'react-icons/tb';
 import { RiTailwindCssFill } from 'react-icons/ri';
 import { FaGitAlt } from 'react-icons/fa6';
 import { SiJira } from 'react-icons/si';
+import { useTranslations } from 'next-intl';
 
-import profilePic from '../assets/profile-pic.jpg';
+import profilePic from '../../assets/profile-pic.jpg';
 
 const socialLinks = [
   {
@@ -49,6 +50,8 @@ const skills = [
 ];
 
 export default function Home() {
+  const t = useTranslations('HomePage');
+
   return (
     <main className="container mx-auto px-4 flex flex-col justify-center min-h-[calc(100vh-64px)]">
       <motion.div
@@ -65,7 +68,7 @@ export default function Home() {
           className="rounded-full mb-4"
         />
         <h1 className="text-4xl font-bold mb-2">Ernesto Avilés</h1>
-        <p className="text-xl mb-6">Frontend Web Developer</p>
+        <p className="text-xl mb-6">{t('presentation')}</p>
         <p className="max-w-2xl mb-8">
           Welcome! I'm a Frontend Developer with more than two years of
           professional experience working on agile collaborative teams. I
