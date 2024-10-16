@@ -4,6 +4,7 @@ import { getMessages } from 'next-intl/server';
 import './globals.css';
 import { Inter } from 'next/font/google';
 import Navbar from '@/components/Navbar';
+import Head from 'next/head';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -17,6 +18,9 @@ export default async function LocaleLayout({ children, params: { locale } }) {
 
   return (
     <html lang={locale}>
+      <Head>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <body
         className={`${inter.className} min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-white`}
       >
