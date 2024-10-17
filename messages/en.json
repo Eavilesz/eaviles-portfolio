@@ -1,5 +1,22 @@
 {
   "HomePage": {
-    "presentation": "Front End Web Developer"
+    "presentation": "FrontEnd Web Developer",
+    "description": "Welcome! I'm a Frontend Developer with more than two years of professional experience working on agile collaborative teams. I specialize in building web applications using React and TypeScript.",
+    "mainSkills": "Main Skills"
+  },
+  "Portfolio": {
+    "title": "Portfolio",
+    "newsDescription": "A web app that shows the latest news related to space! This app consists in a Nextjs Frontend and Backend, that relies on a Mongo DB Database and a Vercel cron job that updates the news twice a day.",
+    "SttoriaDescription": "Elegant landing page of the Sttoria Photography Studio. Showcasing their services with a bento-style image gallery and a minimalistic video player.",
+    "viewProject": "View Project"
+  },
+  "Navigation": {
+    "home": "Home",
+    "portfolio": "Portfolio",
+    "certifications": "Certifications"
+  },
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, en {🇺🇸 English} es {🇪🇸 Spanish} other {Unknown}}"
   }
 }

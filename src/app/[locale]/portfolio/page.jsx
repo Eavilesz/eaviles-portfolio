@@ -17,46 +17,47 @@ import { RiNextjsLine } from 'react-icons/ri';
 import { RiJavascriptLine } from 'react-icons/ri';
 import { TbBrandMongodb } from 'react-icons/tb';
 import { RiTailwindCssFill } from 'react-icons/ri';
+import { useTranslations } from 'next-intl';
 
 import spaceNews from '../../../assets/space-news.png';
 
 import sttoria from '../../../assets/sttoria.avif';
 
-const projects = [
-  {
-    title: 'Space News',
-    description:
-      'A web app that shows the latest news related to space! This app consists in a Nextjs Frontend and Backend, that relies on a Mongo DB Database and a Vercel cron job that updates the news twice a day.',
-    image: spaceNews,
-    tags: [
-      { name: 'Nextjs', icon: RiNextjsLine },
-      { name: 'JavaScript', icon: RiJavascriptLine, iconColor: '#F0DB4F' },
-      { name: 'MongoDB', icon: TbBrandMongodb, iconColor: '#3FA037' },
-      { name: 'Tailwind CSS', icon: RiTailwindCssFill, iconColor: '#38bdf9' },
-    ],
-    url: 'https://news-two-neon.vercel.app/',
-  },
-  {
-    title: 'Sttoria Landing Page',
-    description:
-      'Elegant landing page of the Sttoria Photography Studio. Showcasing their services with a bento-style image gallery and a minimalistic video player.',
-    image: sttoria,
-    tags: [
-      { name: 'Nextjs', icon: RiNextjsLine },
-      { name: 'JavaScript', icon: RiJavascriptLine, iconColor: '#F0DB4F' },
-      { name: 'Tailwind CSS', icon: RiTailwindCssFill, iconColor: '#38bdf9' },
-    ],
-
-    url: 'https://sttoria.vercel.app/',
-  },
-];
-
 export default function Projects() {
   const [hoveredProject, setHoveredProject] = useState(null);
 
+  const t = useTranslations('Portfolio');
+
+  const projects = [
+    {
+      title: 'Space News',
+      description: t('newsDescription'),
+      image: spaceNews,
+      tags: [
+        { name: 'Nextjs', icon: RiNextjsLine },
+        { name: 'JavaScript', icon: RiJavascriptLine, iconColor: '#F0DB4F' },
+        { name: 'MongoDB', icon: TbBrandMongodb, iconColor: '#3FA037' },
+        { name: 'Tailwind CSS', icon: RiTailwindCssFill, iconColor: '#38bdf9' },
+      ],
+      url: 'https://news-two-neon.vercel.app/',
+    },
+    {
+      title: 'Sttoria Landing Page',
+      description: t('SttoriaDescription'),
+      image: sttoria,
+      tags: [
+        { name: 'Nextjs', icon: RiNextjsLine },
+        { name: 'JavaScript', icon: RiJavascriptLine, iconColor: '#F0DB4F' },
+        { name: 'Tailwind CSS', icon: RiTailwindCssFill, iconColor: '#38bdf9' },
+      ],
+
+      url: 'https://sttoria.vercel.app/',
+    },
+  ];
+
   return (
     <main className="container mx-auto px-4 py-16">
-      <h1 className="text-3xl font-bold mb-8 text-center">Projects</h1>
+      <h1 className="text-3xl font-bold mb-8 text-center">{t('title')}</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((project, index) => (
           <motion.div
@@ -112,7 +113,8 @@ export default function Projects() {
                     rel="noopener noreferrer"
                     className="text-blue-400 hover:text-blue-300 flex items-center gap-1"
                   >
-                    View Project <ExternalLink size={16} />
+                    {t('viewProject')}
+                    <ExternalLink size={16} />
                   </a>
                 </CardFooter>
               </motion.div>

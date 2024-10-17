@@ -25,6 +25,7 @@ export default async function LocaleLayout({ children, params: { locale } }) {
         className={`${inter.className} min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-white`}
       >
         <NextIntlClientProvider messages={messages}>
+          <Navbar />
           {children}
         </NextIntlClientProvider>
       </body>

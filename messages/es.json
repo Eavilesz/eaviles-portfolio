@@ -1,0 +1,22 @@
+{
+  "HomePage": {
+    "presentation": "Desarrollador web Frontend ",
+    "description": "¡Bienvenidos! Soy un desarrollador frontend con más de dos años de experiencia profesional trabajando en equipos colaborativos ágiles. Me especializo en la creación de aplicaciones web utilizando React y TypeScript.",
+    "mainSkills": "Habilidades principales"
+  },
+  "Portfolio": {
+    "title": "Portafolio",
+    "newsDescription": "Una aplicación web que muestra las últimas noticias relacionadas con el espacio. Esta aplicación consta de un frontend y backend de Nextjs, con base de datos MongoDB y un cron job de Vercel que actualiza las noticias dos veces al día consumiento la api de noticias.",
+    "SttoriaDescription": "Elegante página de inicio del estudio de fotografía Sttoria. Muestra sus servicios con una galería de imágenes estilo bento y un reproductor de video minimalista.",
+    "viewProject": "Ver proyecto"
+  },
+  "Navigation": {
+    "home": "inicio",
+    "portfolio": "Portafolio",
+    "certifications": "Certificaciones"
+  },
+  "LocaleSwitcher": {
+    "label": "Cambiar lenguaje",
+    "locale": "{locale, select, en {🇺🇸 Inglés} es {🇪🇸 Español} other {Unknown}}"
+  }
+}

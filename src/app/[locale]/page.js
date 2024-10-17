@@ -69,11 +69,7 @@ export default function Home() {
         />
         <h1 className="text-4xl font-bold mb-2">Ernesto Avilés</h1>
         <p className="text-xl mb-6">{t('presentation')}</p>
-        <p className="max-w-2xl mb-8">
-          Welcome! I&apos;m a Frontend Developer with more than two years of
-          professional experience working on agile collaborative teams. I
-          specialize in building web applications using React and TypeScript.
-        </p>
+        <p className="max-w-2xl mb-8">{t('description')}</p>
         <div className="flex space-x-4 mb-8">
           {socialLinks.map((link) => (
             <motion.a
@@ -91,7 +87,7 @@ export default function Home() {
           ))}
         </div>
         <div className="w-full max-w-2xl mt-10">
-          <h2 className="text-2xl font-bold mb-4">Skills</h2>
+          <h2 className="text-2xl font-bold mb-4">{t('mainSkills')}</h2>
           <div className="flex flex-wrap justify-center gap-2">
             {skills.map((skill) => (
               <motion.div
