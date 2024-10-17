@@ -53,24 +53,27 @@ export default function Home() {
   const t = useTranslations('HomePage');
 
   return (
-    <main className="container mx-auto px-4 flex flex-col justify-center min-h-[calc(100vh-64px)]">
+    <main className="min-h-screen bg-gradient-to-br text-white py-10 px-4">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="flex flex-col items-center text-center"
+        className="flex flex-col items-center text-center max-w-4xl mx-auto"
       >
         <Image
           src={profilePic}
           alt="Ernesto Aviles"
-          width={150}
-          height={150}
-          className="rounded-full mb-4"
+          width={200}
+          height={200}
+          className="rounded-full mb-8 border-4 border-teal-400"
+          priority
         />
-        <h1 className="text-4xl font-bold mb-2">Ernesto Avilés</h1>
-        <p className="text-xl mb-6">{t('presentation')}</p>
-        <p className="max-w-2xl mb-8">{t('description')}</p>
-        <div className="flex space-x-4 mb-8">
+        <h1 className="text-6xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-green-400">
+          Ernesto Avilés
+        </h1>
+        <p className="text-3xl mb-8 text-teal-300">{t('presentation')}</p>
+        <p className="text-xl mb-12 leading-relaxed">{t('description')}</p>
+        <div className="flex space-x-6 mb-12">
           {socialLinks.map((link) => (
             <motion.a
               key={link.name}
@@ -79,16 +82,18 @@ export default function Home() {
               rel="noopener noreferrer"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
-              className="text-white hover:text-gray-300"
+              className="text-white hover:text-teal-400 transition-colors"
+              aria-label={`Visit ${link.name} profile`}
             >
-              <link.icon size={24} color={link.iconColor} />
-              <span className="sr-only">{link.name}</span>
+              <link.icon size={32} />
             </motion.a>
           ))}
         </div>
-        <div className="w-full max-w-2xl mt-10">
-          <h2 className="text-2xl font-bold mb-4">{t('mainSkills')}</h2>
-          <div className="flex flex-wrap justify-center gap-2">
+        <div className="w-full mt-20">
+          <h2 className="text-4xl font-bold mb-8 text-blue-300">
+            {t('mainSkills')}
+          </h2>
+          <div className="flex flex-wrap justify-center gap-4">
             {skills.map((skill) => (
               <motion.div
                 key={skill.name}
@@ -98,9 +103,9 @@ export default function Home() {
               >
                 <Badge
                   variant="secondary"
-                  className="flex items-center gap-1 px-3 py-1 text-sm"
+                  className="flex items-center gap-2 px-4 py-2 text-lg bg-opacity-20 bg-white backdrop-filter backdrop-blur-lg"
                 >
-                  <skill.icon size={'22px'} color={skill.iconColor} />
+                  <skill.icon size={24} color={skill.iconColor} />
                   {skill.name}
                 </Badge>
               </motion.div>

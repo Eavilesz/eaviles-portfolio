@@ -20,7 +20,6 @@ import { RiTailwindCssFill } from 'react-icons/ri';
 import { useTranslations } from 'next-intl';
 
 import spaceNews from '../../../assets/space-news.png';
-
 import sttoria from '../../../assets/sttoria.avif';
 
 export default function Projects() {
@@ -50,14 +49,15 @@ export default function Projects() {
         { name: 'JavaScript', icon: RiJavascriptLine, iconColor: '#F0DB4F' },
         { name: 'Tailwind CSS', icon: RiTailwindCssFill, iconColor: '#38bdf9' },
       ],
-
       url: 'https://sttoria.vercel.app/',
     },
   ];
 
   return (
-    <main className="container mx-auto px-4 py-16">
-      <h1 className="text-3xl font-bold mb-8 text-center">{t('title')}</h1>
+    <main className="container mx-auto px-4 py-16 min-h-screen">
+      <h1 className="text-4xl font-bold mb-12 text-center text-teal-300">
+        {t('title')}
+      </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((project, index) => (
           <motion.div
@@ -67,7 +67,7 @@ export default function Projects() {
             transition={{ duration: 0.5, delay: index * 0.1 }}
           >
             <Card
-              className="bg-gray-800 border-gray-700 overflow-hidden h-full"
+              className="bg-black/20 border-teal-600 overflow-hidden h-full"
               onMouseEnter={() => setHoveredProject(index)}
               onMouseLeave={() => setHoveredProject(null)}
             >
@@ -85,10 +85,10 @@ export default function Projects() {
                   className="w-full object-cover h-64"
                 />
                 <CardHeader>
-                  <CardTitle className="text-white mb-2">
+                  <CardTitle className="text-teal-300 mb-2">
                     {project.title}
                   </CardTitle>
-                  <CardDescription className="min-h-20">
+                  <CardDescription className="min-h-32 text-white">
                     {project.description}
                   </CardDescription>
                 </CardHeader>
@@ -98,7 +98,7 @@ export default function Projects() {
                       <Badge
                         key={tag.name}
                         variant="secondary"
-                        className="flex items-center gap-1 h-min"
+                        className="flex items-center gap-1 h-min bg-teal-100/20 text-white"
                       >
                         <tag.icon color={tag.iconColor} size={'22px'} />
                         {tag.name}
@@ -111,7 +111,7 @@ export default function Projects() {
                     href={project.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-400 hover:text-blue-300 flex items-center gap-1"
+                    className="text-teal-400 hover:text-teal-300 flex items-center gap-1"
                   >
                     {t('viewProject')}
                     <ExternalLink size={16} />

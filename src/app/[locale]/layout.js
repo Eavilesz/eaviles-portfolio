@@ -22,7 +22,7 @@ export default async function LocaleLayout({ children, params: { locale } }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <body
-        className={`${inter.className} min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-white`}
+        className={`${inter.className} min-h-screen bg-gradient-to-br from-blue-900 via-teal-800 to-green-900`}
       >
         <NextIntlClientProvider messages={messages}>
           <Navbar />

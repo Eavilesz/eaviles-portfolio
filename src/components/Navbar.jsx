@@ -24,16 +24,16 @@ export default function Navbar() {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
-    <nav className="bg-gray-900 text-white py-4">
+    <nav className="bg-blue-900 text-white py-4">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
-          <Link href="/" className="text-2xl font-bold">
+          <Link href="/" className="text-2xl font-bold text-teal-400">
             Ernesto Avilés
           </Link>
           <div className="lg:hidden">
             <button
               onClick={toggleMenu}
-              className="focus:outline-none"
+              className="focus:outline-none text-teal-400"
               aria-label="Toggle menu"
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -42,11 +42,14 @@ export default function Navbar() {
           <ul className="hidden lg:flex space-x-6 text-2xl">
             {navItems.map((item) => (
               <li key={item.name}>
-                <Link href={item.path} className="relative">
+                <Link
+                  href={item.path}
+                  className="relative hover:text-teal-400 transition-colors"
+                >
                   {item.path === pathname && (
                     <motion.span
                       layoutId="underline"
-                      className="absolute left-0 top-full block h-[2px] w-full bg-blue-400"
+                      className="absolute left-0 top-full block h-[2px] w-full bg-teal-400"
                     />
                   )}
                   {item.name}
@@ -68,7 +71,11 @@ export default function Navbar() {
             <ul className="flex flex-col space-y-4 text-2xl">
               {navItems.map((item) => (
                 <li key={item.name}>
-                  <Link href={item.path} className="block" onClick={toggleMenu}>
+                  <Link
+                    href={item.path}
+                    className="block hover:text-teal-400 transition-colors"
+                    onClick={toggleMenu}
+                  >
                     {item.name}
                   </Link>
                 </li>
