@@ -1,14 +1,20 @@
 {
   "HomePage": {
-    "presentation": "Desarrollador web Frontend ",
+    "presentation": "Desarrollador Web",
     "description": "¡Bienvenidos! Soy un desarrollador frontend con más de dos años de experiencia profesional trabajando en equipos colaborativos ágiles. Me especializo en la creación de aplicaciones web utilizando React y TypeScript.",
     "mainSkills": "Habilidades principales"
   },
   "Portfolio": {
-    "title": "Portafolio",
-    "newsDescription": "Una aplicación web que muestra las últimas noticias relacionadas con el espacio. Esta aplicación consta de un frontend y backend de Nextjs, con base de datos MongoDB y un cron job de Vercel que actualiza las noticias dos veces al día consumiento la api de noticias.",
-    "SttoriaDescription": "Elegante página de inicio del estudio de fotografía Sttoria. Muestra sus servicios con una galería de imágenes estilo bento y un reproductor de video minimalista.",
-    "viewProject": "Ver proyecto"
+    "title": "Proyectos",
+    "newsTitle": "Noticias del Espacio",
+    "newsDescription": "Una aplicación acerca de las últimas noticias relacionadas con el espacio. Consta de un frontend y backend de Nextjs, con base de datos MongoDB y un Cron Job de Vercel. Este actualiza las noticias dos veces al día consumiento una API de noticias.",
+    "sttoriaTitle": "Landing Page de Sttoria",
+    "SttoriaDescription": "Elegante landing page del estudio de fotografía profesional Sttoria. Muestra sus servicios con una galería de imágenes estilo bento y un reproductor de video minimalista.",
+    "tasksTitle": "Administrador de Tareas",
+    "taskManagerDescription": "Una útil aplicación de tareas que consta de un diseño tipo Kanban Board. Permite operaciones CRUD, filtrado múltiple, paginación y login con Google.",
+    "viewProject": "Ver proyecto",
+    "seeDescription": "Mostrar descripción",
+    "hideDescription": "Ocultar descripción"
   },
   "Navigation": {
     "home": "inicio",

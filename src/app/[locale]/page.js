@@ -89,7 +89,7 @@ export default function Home() {
             </motion.a>
           ))}
         </div>
-        <div className="w-full mt-20">
+        <div className="w-full mt-4">
           <h2 className="text-4xl font-bold mb-8 text-blue-300">
             {t('mainSkills')}
           </h2>

@@ -2,8 +2,8 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
-import { ExternalLink } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { ExternalLink, ChevronDown, ChevronUp } from 'lucide-react';
 import {
   Card,
   CardContent,
@@ -13,45 +13,76 @@ import {
   CardTitle,
 } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
 import { RiNextjsLine } from 'react-icons/ri';
 import { RiJavascriptLine } from 'react-icons/ri';
 import { TbBrandMongodb } from 'react-icons/tb';
 import { RiTailwindCssFill } from 'react-icons/ri';
 import { useTranslations } from 'next-intl';
+import { SiTestinglibrary } from 'react-icons/si';
+import { BiLogoTypescript } from 'react-icons/bi';
+import { FaGear } from 'react-icons/fa6';
 
 import spaceNews from '../../../assets/space-news.png';
 import sttoria from '../../../assets/sttoria.avif';
+import taskManager from '@/assets/task-manager.avif';
 
 export default function Projects() {
   const [hoveredProject, setHoveredProject] = useState(null);
+  const [expandedDescriptions, setExpandedDescriptions] = useState({});
 
   const t = useTranslations('Portfolio');
 
   const projects = [
     {
-      title: 'Space News',
-      description: t('newsDescription'),
+      title: t('newsTitle'),
+      description: t.rich('newsDescription'),
       image: spaceNews,
       tags: [
-        { name: 'Nextjs', icon: RiNextjsLine },
+        { name: 'Nextjs', icon: RiNextjsLine, iconColor: '#000000' },
         { name: 'JavaScript', icon: RiJavascriptLine, iconColor: '#F0DB4F' },
         { name: 'MongoDB', icon: TbBrandMongodb, iconColor: '#3FA037' },
         { name: 'Tailwind CSS', icon: RiTailwindCssFill, iconColor: '#38bdf9' },
+        { name: 'API Integration', icon: FaGear, iconColor: '#38bdf9' },
       ],
       url: 'https://news-two-neon.vercel.app/',
     },
     {
-      title: 'Sttoria Landing Page',
+      title: t('tasksTitle'),
+      description: t('taskManagerDescription'),
+      image: taskManager,
+      tags: [
+        { name: 'Nextjs', icon: RiNextjsLine, iconColor: '#000000' },
+        { name: 'TypeScript', icon: BiLogoTypescript, iconColor: '#3178c6' },
+        { name: 'Tailwind CSS', icon: RiTailwindCssFill, iconColor: '#38bdf9' },
+        { name: 'API Integration', icon: FaGear, iconColor: '#38bdf9' },
+        {
+          name: 'Testing Library',
+          icon: SiTestinglibrary,
+          iconColor: '#d52e2c',
+        },
+      ],
+      url: 'https://tasks-chi-two.vercel.app/',
+    },
+    {
+      title: t('sttoriaTitle'),
       description: t('SttoriaDescription'),
       image: sttoria,
       tags: [
-        { name: 'Nextjs', icon: RiNextjsLine },
+        { name: 'Nextjs', icon: RiNextjsLine, iconColor: '#000000' },
         { name: 'JavaScript', icon: RiJavascriptLine, iconColor: '#F0DB4F' },
         { name: 'Tailwind CSS', icon: RiTailwindCssFill, iconColor: '#38bdf9' },
       ],
       url: 'https://sttoria.vercel.app/',
     },
   ];
+
+  const toggleDescription = (index) => {
+    setExpandedDescriptions((prev) => ({
+      ...prev,
+      [index]: !prev[index],
+    }));
+  };
 
   return (
     <main className="container mx-auto px-4 py-16 min-h-screen">
@@ -67,7 +98,7 @@ export default function Projects() {
             transition={{ duration: 0.5, delay: index * 0.1 }}
           >
             <Card
-              className="bg-black/20 border-teal-600 overflow-hidden h-full"
+              className="bg-black/20 border-teal-600 overflow-hidden h-full flex flex-col"
               onMouseEnter={() => setHoveredProject(index)}
               onMouseLeave={() => setHoveredProject(null)}
             >
@@ -84,15 +115,43 @@ export default function Projects() {
                   height={200}
                   className="w-full object-cover h-64"
                 />
-                <CardHeader>
-                  <CardTitle className="text-teal-300 mb-2">
+                <CardHeader className="mb-4">
+                  <CardTitle className="text-teal-300 mb-2 text-xl">
                     {project.title}
                   </CardTitle>
-                  <CardDescription className="min-h-32 text-white">
-                    {project.description}
-                  </CardDescription>
+                  <Button
+                    variant="ghost"
+                    className="text-teal-400 hover:text-teal-300 p-0 h-auto"
+                    onClick={() => toggleDescription(index)}
+                  >
+                    {expandedDescriptions[index] ? (
+                      <>
+                        {t('hideDescription')}
+                        <ChevronUp className="ml-2 h-4 w-4" />
+                      </>
+                    ) : (
+                      <>
+                        {t('seeDescription')}
+                        <ChevronDown className="ml-2 h-4 w-4" />
+                      </>
+                    )}
+                  </Button>
                 </CardHeader>
-                <CardContent>
+                <CardContent className="flex-grow">
+                  <AnimatePresence>
+                    {expandedDescriptions[index] && (
+                      <motion.div
+                        initial={{ opacity: 0, height: 0 }}
+                        animate={{ opacity: 1, height: 'auto' }}
+                        exit={{ opacity: 0, height: 0 }}
+                        transition={{ duration: 0.3 }}
+                      >
+                        <CardDescription className="text-white text-md mb-4">
+                          {project.description}
+                        </CardDescription>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
                   <div className="flex flex-wrap gap-3 min-h-20">
                     {project.tags.map((tag) => (
                       <Badge

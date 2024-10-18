@@ -24,7 +24,7 @@ export default function Navbar() {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
-    <nav className="bg-blue-900 text-white py-4">
+    <nav className="fixed top-0 left-0 right-0 bg-blue-900 text-white py-4 z-50">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
           <Link href="/" className="text-2xl font-bold text-teal-400">

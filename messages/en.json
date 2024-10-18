@@ -1,14 +1,20 @@
 {
   "HomePage": {
-    "presentation": "FrontEnd Web Developer",
-    "description": "Welcome! I'm a Frontend Developer with more than two years of professional experience working on agile collaborative teams. I specialize in building web applications using React and TypeScript.",
+    "presentation": "Web Developer",
+    "description": "Welcome! I'm a Web Developer with more than two years of professional experience working on agile collaborative teams. I specialize in building web applications using React and TypeScript.",
     "mainSkills": "Main Skills"
   },
   "Portfolio": {
-    "title": "Portfolio",
-    "newsDescription": "A web app that shows the latest news related to space! This app consists in a Nextjs Frontend and Backend, that relies on a Mongo DB Database and a Vercel cron job that updates the news twice a day.",
+    "title": "Projects",
+    "newsDescription": "A web app that shows the latest news related to space! This app consists of a Nextjs Frontend and Backend, that relies on a MongoDB Database and a Vercel cron job. It updates the news twice a day by consuming the News API.",
+    "newsTitle": "Space News",
+    "sttoriaTitle": "Sttoria's Landing Page",
     "SttoriaDescription": "Elegant landing page of the Sttoria Photography Studio. Showcasing their services with a bento-style image gallery and a minimalistic video player.",
-    "viewProject": "View Project"
+    "tasksTitle": "Tasks Manager",
+    "taskManagerDescription": "A useful task app that consists of a Kanban Board-like layout. It allows CRUD operations, multiple filtering, pagination, and Google login.",
+    "viewProject": "View Project",
+    "seeDescription": "See description",
+    "hideDescription": "Hide description"
   },
   "Navigation": {
     "home": "Home",
