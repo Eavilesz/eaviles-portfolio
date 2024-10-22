@@ -5,13 +5,18 @@
     "mainSkills": "Main Skills"
   },
   "Portfolio": {
-    "title": "Projects",
-    "newsDescription": "A web app that shows the latest news related to space! This app consists of a Nextjs Frontend and Backend, that relies on a MongoDB Database and a Vercel cron job. It updates the news twice a day by consuming the News API.",
+    "projectsTitle": "Projects",
+    "experienceTitle": "Professional Experience",
     "newsTitle": "Space News",
+    "newsDescription": "A web app that shows the latest news related to space! This app consists of a Nextjs Frontend and Backend, that relies on a MongoDB Database and a Vercel cron job. It updates the news twice a day by consuming the News API.",
     "sttoriaTitle": "Sttoria's Landing Page",
     "SttoriaDescription": "Elegant landing page of the Sttoria Photography Studio. Showcasing their services with a bento-style image gallery and a minimalistic video player.",
     "tasksTitle": "Tasks Manager",
     "taskManagerDescription": "A useful task app that consists of a Kanban Board-like layout. It allows CRUD operations, multiple filtering, pagination, and Google login.",
+    "twilioTitle": "Full Stack Developer at Twilio (2 years)",
+    "twilioDescription": "As a consultant, I participated in the Django to Nextjs migration of the documentation site. I created new React components following the best practices in terms of TDD, SEO, accessibility, responsiveness and performance. Additionally, I led the QA process to verify the correct functioning of the new pages.",
+    "jelouTitle": "Frontend Developer at Jelou (3 months)",
+    "jelouDescription": "Successfully added support for the uploading of elements such as PDFs and multimedia in the HSM (High Structure Message) template input form. Integrated the new Landing page's design in Nextjs.",
     "viewProject": "View Project",
     "seeDescription": "See description",
     "hideDescription": "Hide description"

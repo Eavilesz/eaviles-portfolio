@@ -5,19 +5,24 @@
     "mainSkills": "Habilidades principales"
   },
   "Portfolio": {
-    "title": "Proyectos",
+    "projectsTitle": "Proyectos",
+    "experienceTitle": "Experiencia Profesional",
     "newsTitle": "Noticias del Espacio",
     "newsDescription": "Una aplicación acerca de las últimas noticias relacionadas con el espacio. Consta de un frontend y backend de Nextjs, con base de datos MongoDB y un Cron Job de Vercel. Este actualiza las noticias dos veces al día consumiento una API de noticias.",
     "sttoriaTitle": "Landing Page de Sttoria",
     "SttoriaDescription": "Elegante landing page del estudio de fotografía profesional Sttoria. Muestra sus servicios con una galería de imágenes estilo bento y un reproductor de video minimalista.",
     "tasksTitle": "Administrador de Tareas",
     "taskManagerDescription": "Una útil aplicación de tareas que consta de un diseño tipo Kanban Board. Permite operaciones CRUD, filtrado múltiple, paginación y login con Google.",
+    "twilioTitle": "Desarrollador Full Stack en Twilio (2 años)",
+    "twilioDescription": "Como consultor, participé en la migración de Django a Nextjs del sitio de documentación. Creé nuevos componentes de React siguiendo las mejores prácticas en términos de TDD, SEO, accesibilidad y rendimiento.",
+    "jelouTitle": "Desarrollador Frontend en Jelou (2 meses)",
+    "jelouDescription": "Añadí con éxito compatibilidad para cargar elementos como archivos PDF y multimedia en el formulario de creación de plantillas HSM (mensaje de alta estructura). Se integró el nuevo diseño de la Landing page en Nextjs.",
     "viewProject": "Ver proyecto",
     "seeDescription": "Mostrar descripción",
     "hideDescription": "Ocultar descripción"
   },
   "Navigation": {
-    "home": "inicio",
+    "home": "Inicio",
     "portfolio": "Portafolio",
     "certifications": "Certificaciones"
   },
