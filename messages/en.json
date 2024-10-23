@@ -11,7 +11,7 @@
     "newsDescription": "A web application that delivers the latest space-related news, built with a Next.js frontend and backend. The app leverages a MongoDB database and utilizes a Vercel cron job to automatically update news content twice a day by consuming the News API.",
     "sttoriaTitle": "Sttoria's Landing Page",
     "SttoriaDescription": "An elegant landing page for Sttoria Photography Studio, featuring a sleek bento-style image gallery to showcase their services and a minimalist video player for a clean, professional presentation.",
-    "tasksTitle": "Tasks Manager",
+    "tasksTitle": "Kanban-style Tasks Manager",
     "taskManagerDescription": "A robust task management application featuring a Kanban board layout that supports CRUD operations, advanced filtering, pagination, and Google authentication for user access.",
     "dashboardTitle": "Invoices Dashboard (Migration to Prisma)",
     "dashboardDescription": "As part of a Next.js course, I developed a dashboard that relies on the latest features of Next.js. The initial implementation used the @vercel/postgres library for database queries. However, I challenged myself to go beyond the course material and successfully integrated Prisma (@prisma/client) as a replacement. This migration was an enriching experience in enhancing database management with Prisma's more advanced querying capabilities.",

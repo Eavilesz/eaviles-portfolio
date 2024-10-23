@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ExternalLink, ChevronDown, ChevronUp } from 'lucide-react';
+import { ExternalLink, ChevronDown, ChevronUp, Github } from 'lucide-react';
 import {
   Card,
   CardContent,
@@ -108,16 +108,28 @@ export default function PortfolioSection({ portfolioObj }) {
                     ))}
                   </div>
                 </CardContent>
-                <CardFooter>
+                <CardFooter className="flex justify-between items-center mt-4">
                   <a
                     href={project.url}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-teal-400 hover:text-teal-300 flex items-center gap-1"
+                    aria-label={`View ${project.title} project`}
                   >
                     {t('viewProject')}
                     <ExternalLink size={16} />
                   </a>
+                  {project.gitUrl && (
+                    <a
+                      href={project.gitUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-teal-400 hover:text-teal-300 flex items-center gap-1"
+                      aria-label={`View ${project.title} GitHub repository`}
+                    >
+                      <Github size={20} />
+                    </a>
+                  )}
                 </CardFooter>
               </motion.div>
             </Card>

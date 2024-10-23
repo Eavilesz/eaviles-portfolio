@@ -53,14 +53,15 @@ export const getPortfolioProjects = (t) => ({
         { name: 'API Integration', icon: FaGear, iconColor: '#38bdf9' },
       ],
       url: 'https://news-two-neon.vercel.app/',
+      gitUrl: 'https://github.com/Eavilesz/news',
     },
     {
       title: t('tasksTitle'),
       description: t('taskManagerDescription'),
       image: taskManager,
       tags: [
-        { name: 'Nextjs', icon: RiNextjsLine, iconColor: '#000000' },
         { name: 'TypeScript', icon: BiLogoTypescript, iconColor: '#3178c6' },
+        { name: 'Nextjs', icon: RiNextjsLine, iconColor: '#000000' },
         {
           name: 'Tailwind CSS',
           icon: RiTailwindCssFill,
@@ -74,6 +75,7 @@ export const getPortfolioProjects = (t) => ({
         },
       ],
       url: 'https://tasks-chi-two.vercel.app/',
+      gitUrl: 'https://github.com/Eavilesz/tasks',
     },
     {
       title: t('sttoriaTitle'),
@@ -89,6 +91,7 @@ export const getPortfolioProjects = (t) => ({
         },
       ],
       url: 'https://sttoria.vercel.app/',
+      gitUrl: 'https://github.com/Eavilesz/sttoria',
     },
     {
       title: t('dashboardTitle'),
@@ -106,6 +109,7 @@ export const getPortfolioProjects = (t) => ({
         },
       ],
       url: 'https://nextjs-dashboard-eta-pied-59.vercel.app/dashboard',
+      gitUrl: 'https://github.com/Eavilesz/nextjs-dashboard',
     },
   ],
 });
