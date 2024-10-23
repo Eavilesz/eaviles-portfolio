@@ -19,6 +19,8 @@ import { SiJest } from 'react-icons/si';
 import { FaRaspberryPi } from 'react-icons/fa';
 import { SiArduino } from 'react-icons/si';
 import { FaPython } from 'react-icons/fa';
+import { SiPrisma } from 'react-icons/si';
+import { BiLogoPostgresql } from 'react-icons/bi';
 
 import spaceNews from '@/assets/space-news.png';
 import sttoria from '@/assets/sttoria.avif';
@@ -26,6 +28,7 @@ import taskManager from '@/assets/task-manager.avif';
 import twilio from '@/assets/twilio.avif';
 import jelou from '@/assets/jelou.avif';
 import nido from '@/assets/nido.avif';
+import dashboard from '@/assets/dashboard.avif';
 
 export function cn(...inputs) {
   return twMerge(clsx(inputs));
@@ -87,6 +90,23 @@ export const getPortfolioProjects = (t) => ({
       ],
       url: 'https://sttoria.vercel.app/',
     },
+    {
+      title: t('dashboardTitle'),
+      description: t('dashboardDescription'),
+      image: dashboard,
+      tags: [
+        { name: 'Prisma', icon: SiPrisma, iconColor: '#800000' },
+        { name: 'PostgreSQL', icon: BiLogoPostgresql, iconColor: '#008bb9' },
+        { name: 'Nextjs', icon: RiNextjsLine, iconColor: '#000000' },
+        { name: 'TypeScript', icon: BiLogoTypescript, iconColor: '#3178c6' },
+        {
+          name: 'Tailwind CSS',
+          icon: RiTailwindCssFill,
+          iconColor: '#38bdf9',
+        },
+      ],
+      url: 'https://nextjs-dashboard-eta-pied-59.vercel.app/dashboard',
+    },
   ],
 });
 
@@ -98,18 +118,18 @@ export const getPortfolioExperience = (t) => ({
       description: t.rich('twilioDescription'),
       image: twilio,
       tags: [
-        { name: 'Nextjs', icon: RiNextjsLine, iconColor: '#000000' },
-        { name: 'Django', icon: TbBrandDjango, iconColor: '#092e20' },
         { name: 'TypeScript', icon: BiLogoTypescript, iconColor: '#3178c6' },
+        { name: 'GIT', icon: FaGitAlt, iconColor: '#F1502F' },
+        { name: 'Django', icon: TbBrandDjango, iconColor: '#092e20' },
+        { name: 'Scrum', icon: DiScrum, iconColor: '#40E0D0' },
+        { name: 'Jest', icon: SiJest, iconColor: '#EEC5B9' },
+        { name: 'Nextjs', icon: RiNextjsLine, iconColor: '#000000' },
         {
           name: 'CSS',
           icon: FaCss3Alt,
           iconColor: '#264de4',
         },
         { name: 'API Integration', icon: FaGear, iconColor: '#38bdf9' },
-        { name: 'GIT', icon: FaGitAlt, iconColor: '#F1502F' },
-        { name: 'Scrum', icon: DiScrum, iconColor: '#40E0D0' },
-        { name: 'Jest', icon: SiJest, iconColor: '#EEC5B9' },
       ],
       url: 'https://www.twilio.com/docs',
     },

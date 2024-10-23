@@ -13,6 +13,8 @@
     "SttoriaDescription": "Elegante landing page para el Estudio de Fotografía Sttoria, con una galería de imágenes estilo bento para mostrar sus servicios y un reproductor de video minimalista para una presentación limpia y profesional.",
     "tasksTitle": "Administrador de Tareas",
     "taskManagerDescription": "Una robusta aplicación de gestión de tareas que cuenta con un diseño de tablero Kanban que admite operaciones CRUD, filtrado avanzado, paginación y autenticación de Google para el acceso de los usuarios.",
+    "dashboardTitle": "Dashboard de Facturas (Migración a Prisma)",
+    "dashboardDescription": "Como parte de un curso de Next.js, desarrollé un panel de control que se basa en las últimas características de Next.js. La implementación inicial utilizó la biblioteca @vercel/postgres para consultas de bases de datos. Sin embargo, me propuse ir más allá del material del curso e integré con éxito Prisma (@prisma/client) como reemplazo. Esta migración fue una experiencia enriquecedora para mejorar la gestión de bases de datos con las capacidades de consulta más avanzadas de Prisma.",
     "twilioTitle": "Desarrollador Full Stack en Twilio (2 años)",
     "twilioDescription": "Como consultor, contribuí a la migración exitosa de un sitio de documentación de Django a Next.js. Desarrollé nuevos componentes de React, siguiendo las mejores prácticas en desarrollo basado en pruebas (TDD), optimización SEO, accesibilidad y rendimiento. Además, dirigí el proceso de control de calidad (QA), asegurándome de que las páginas recién desarrolladas funcionaran correctamente y cumplieran con altos estándares.",
     "jelouTitle": "Desarrollador Frontend en Jelou (2 meses)",
