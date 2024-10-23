@@ -16,12 +16,16 @@ import { FaReact } from 'react-icons/fa6';
 import { FaFigma } from 'react-icons/fa';
 import { FaSass } from 'react-icons/fa';
 import { SiJest } from 'react-icons/si';
+import { FaRaspberryPi } from 'react-icons/fa';
+import { SiArduino } from 'react-icons/si';
+import { FaPython } from 'react-icons/fa';
 
 import spaceNews from '@/assets/space-news.png';
 import sttoria from '@/assets/sttoria.avif';
 import taskManager from '@/assets/task-manager.avif';
 import twilio from '@/assets/twilio.avif';
 import jelou from '@/assets/jelou.avif';
+import nido from '@/assets/nido.avif';
 
 export function cn(...inputs) {
   return twMerge(clsx(inputs));
@@ -100,7 +104,7 @@ export const getPortfolioExperience = (t) => ({
         {
           name: 'CSS',
           icon: FaCss3Alt,
-          iconColor: '#2965f1',
+          iconColor: '#264de4',
         },
         { name: 'API Integration', icon: FaGear, iconColor: '#38bdf9' },
         { name: 'GIT', icon: FaGitAlt, iconColor: '#F1502F' },
@@ -134,6 +138,21 @@ export const getPortfolioExperience = (t) => ({
         },
       ],
       url: 'https://jelou.ai/',
+    },
+    {
+      title: t('nidoTitle'),
+      description: t('nidoDescription'),
+      image: nido,
+      tags: [
+        { name: 'Raspberry PI', icon: FaRaspberryPi, iconColor: '#8cc04b' },
+        { name: 'Arduino', icon: SiArduino, iconColor: '#00979C' },
+        {
+          name: 'Python',
+          icon: FaPython,
+          iconColor: '#ffde57',
+        },
+      ],
+      url: 'https://nidointeractive.com/en/projects',
     },
   ],
 });
