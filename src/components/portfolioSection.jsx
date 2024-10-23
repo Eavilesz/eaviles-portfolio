@@ -50,14 +50,19 @@ export default function PortfolioSection({ portfolioObj }) {
                   scale: hoveredProject === index ? 1.05 : 1,
                 }}
                 transition={{ duration: 0.3 }}
+                className="flex flex-col h-full"
               >
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  width={300}
-                  height={200}
-                  className="w-full object-cover h-64"
-                />
+                <div className="relative w-full h-64">
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    className="object-cover"
+                    quality={90}
+                    priority={index < 3}
+                  />
+                </div>
                 <CardHeader className="mb-4">
                   <CardTitle className="text-teal-300 mb-2 text-xl">
                     {project.title}
