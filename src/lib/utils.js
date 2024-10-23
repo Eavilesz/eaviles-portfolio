@@ -22,7 +22,7 @@ import { FaPython } from 'react-icons/fa';
 import { SiPrisma } from 'react-icons/si';
 import { BiLogoPostgresql } from 'react-icons/bi';
 
-import spaceNews from '@/assets/space-news.png';
+import spaceNews from '@/assets/spaceNews.avif';
 import sttoria from '@/assets/sttoria.avif';
 import taskManager from '@/assets/task-manager.avif';
 import twilio from '@/assets/twilio.avif';
