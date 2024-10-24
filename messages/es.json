@@ -1,7 +1,7 @@
 {
   "HomePage": {
     "presentation": "Desarrollador Web",
-    "description": "¡Bienvenidos! Soy un desarrollador web con más de dos años de experiencia profesional colaborando en equipos ágiles. Mi experiencia se centra en la creación de aplicaciones web dinámicas utilizando, con un fuerte enfoque en el rendimiento, la accesibilidad y la experiencia del usuario.",
+    "description": "¡Bienvenidos! Cuento con más de dos años de experiencia profesional colaborando en equipos ágiles. Mi experiencia se centra en la creación de aplicaciones web dinámicas utilizando, con un fuerte enfoque en el rendimiento, la accesibilidad y la experiencia del usuario.",
     "mainSkills": "Habilidades principales"
   },
   "Portfolio": {
@@ -25,10 +25,29 @@
     "seeDescription": "Mostrar descripción",
     "hideDescription": "Ocultar descripción"
   },
+  "AboutMe": {
+    "title": "De Ingeniero Acústico a Desarrollador de Software",
+    "journeyDescription": "Mi trayectoria profesional resalta mi capacidad de adaptación y aprendizaje rápido. Desde trabajar como acústico hasta convertirme en ingeniero interactivo y ahora en desarrollador de software, siempre he aceptado nuevos desafíos y tecnologías.",
+    "firstTitle": "Graduado como Ingeniero Acústico",
+    "firstDescription": "Trabajé en proyectos como la construcción de escuelas y estudios de música, incluida la Berklee Music Lab School en Quito, Ecuador.",
+    "firstImageDescription": "Estudio musical de MUsic Lab el cual ayudé a construir.",
+    "secondTitle": "Introducción al Mundo Tecnológico",
+    "secondDescription": "Contratado para participar en la construcción de la exposición Zoom en el Museo del Agua Yaku en Ecuador. Diseñé altavoces especiales y programé un sistema interactivo utilizando Raspberry Pi.",
+    "secondImageDescription": "Exposición de museo para la que diseñé los altavoces tipo cúpula y desarrollé la interactividad.",
+    "thirdTitle": "Desarrollador de Sistemas Interactivos",
+    "thirdDescription": "Desarrollé sistemas interactivos para museos utilizando Raspberrys y Arduinos. Empezó mi pasión por la tecnología y la programación.",
+    "thirdImageDescription": "Proyector táctil que instalé en la exposición 'Intangibles' de Fundación Telefónica en Quito, Ecuador.",
+    "fourthTitle": "Transición al Desarollo Web",
+    "fourthDescription": "Durante la pandemia, decidí pasarme al desarrollo web. Asistí a un curso intensivo de 4 meses de Full Stack (MERN) en el cual desarrollé un fuerte fundamento de programación que he seguido puliendo desde entonces.",
+    "fourthImageDescription": "La primera de todas mis certificaciones en desarrollo web.",
+    "fifthTitle": "DEsarrollador Frontend en Jelou",
+    "fifthDescription": "A month after finishing the course, hired as a Frontend developer at Hello. Web Development journey began in earnest.",
+    "fifthImageDescription": "Un mes después de terminar el curso, me contrataron como desarrollador frontend en Jelou. Mi camino en el desarrollo web comenzó!."
+  },
   "Navigation": {
     "home": "Inicio",
     "portfolio": "Portafolio",
-    "certifications": "Certificaciones"
+    "aboutMe": "Sobre mí"
   },
   "LocaleSwitcher": {
     "label": "Cambiar lenguaje",

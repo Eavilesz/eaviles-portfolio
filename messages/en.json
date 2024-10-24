@@ -25,10 +25,30 @@
     "seeDescription": "See description",
     "hideDescription": "Hide description"
   },
+  "AboutMe": {
+    "title": "My Journey: From Acoustic Engineer to Software Developer",
+    "journeyDescription": "My journey highlights my ability to adapt and learn quickly. From working as a acoustician to becoming an interactive engineer and now a software developer, I've consistently embraced new challenges and technologies.",
+    "firstTitle": "Graduated as an Acoustic Engineer",
+    "firstDescription": "Worked on projects like the construction of music schools and studios, including the Berklee Music Lab School in Quito, Ecuador.",
+    "firstImageDescription": "Music Lab School studio I helped build.",
+    "secondTitle": "Entered the Tech World",
+    "secondDescription": "Hired to participate in the construction of the Zoom exhibition at the Yaku Water Museum in Ecuador. Designed special speakers and programmed an interactive system using Raspberry Pi.",
+    "secondImageDescription": "Museum exhibition for which I designed the dome-type speakers and programmed the interactivity.",
+    "thirdTitle": "Interactive Systems Developer",
+    "thirdDescription": "Developed interactive systems for museums using Raspberries and Arduinos. My passion for technology and programming began.",
+    "thirdImageDescription": "Touch projector that I installed at the 'Intangibles' exhibition by Fundación Teléfonica in Quito, Ecuador.",
+    "fourthTitle": "Transition to Web Development",
+    "fourthDescription": "During the pandemic, decided to pivot to web development. Attended an intensive 4-month Full Stack course (MERN) where I developed a strong programming foundation that I have continued to hone ever since.",
+    "fourthImageDescription": "The first of all my certifications in web development.",
+    "fifthTitle": "Frontend Developer at Jelou",
+    "fifthDescription": "A month after finishing the course, I was hired as a Frontend developer at Jelou. Web Development journey began in earnest.",
+    "fifthImageDescription": "My first professional experience as a Frontend Developer."
+  },
+
   "Navigation": {
     "home": "Home",
     "portfolio": "Portfolio",
-    "certifications": "Certifications"
+    "aboutMe": "About Me"
   },
   "LocaleSwitcher": {
     "label": "Change language",

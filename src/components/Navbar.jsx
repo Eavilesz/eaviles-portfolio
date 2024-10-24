@@ -18,7 +18,7 @@ export default function Navbar() {
   const navItems = [
     { name: t('home'), path: '/' },
     { name: t('portfolio'), path: '/portfolio' },
-    { name: t('certifications'), path: '/certifications' },
+    { name: t('aboutMe'), path: '/about-me' },
   ];
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
