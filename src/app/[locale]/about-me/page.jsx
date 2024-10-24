@@ -68,7 +68,7 @@ export default function AboutMe() {
 
         <div className="relative">
           {/* Vertical line */}
-          <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-white"></div>
+          <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-white"></div>
 
           {timelineEvents.map((event, index) => (
             <motion.div
