@@ -16,11 +16,11 @@
     "dashboardTitle": "Dashboard de Facturas (Migración a Prisma)",
     "dashboardDescription": "Como parte de un curso de Next.js, desarrollé un panel de control que se basa en las últimas características de Next.js. La implementación inicial utilizó la biblioteca @vercel/postgres para consultas de bases de datos. Sin embargo, me propuse ir más allá del material del curso e integré con éxito Prisma (@prisma/client) como reemplazo. Esta migración fue una experiencia enriquecedora para mejorar la gestión de bases de datos con las capacidades de consulta más avanzadas de Prisma.",
     "twilioTitle": "Desarrollador Full Stack en Twilio (2 años)",
-    "twilioDescription": "Como consultor, contribuí a la migración exitosa de un sitio de documentación de Django a Next.js. Desarrollé nuevos componentes de React, siguiendo las mejores prácticas en desarrollo basado en pruebas (TDD), optimización SEO, accesibilidad y rendimiento. Además, dirigí el proceso de control de calidad (QA), asegurándome de que las páginas recién desarrolladas funcionaran correctamente y cumplieran con altos estándares.",
+    "twilioDescription": "Como consultor, contribuí a la migración exitosa del sitio de documentación de Django a Next.js. Desarrollé nuevos componentes de React, siguiendo las mejores prácticas en desarrollo basado en pruebas (TDD), optimización SEO, accesibilidad y rendimiento. Además, dirigí el proceso de control de calidad (QA), asegurándome de que las páginas recién desarrolladas funcionaran correctamente y cumplieran con altos estándares.",
     "jelouTitle": "Desarrollador Frontend en Jelou (2 meses)",
-    "jelouDescription": "Implementé soporte para cargar elementos, incluidos archivos PDF y multimedia, dentro del formulario de entrada de plantilla HSM (mensaje de alta estructura). Además, integré el nuevo diseño de la página de destino en un marco Next.js, lo que garantizó una funcionalidad perfecta y la alineación con las especificaciones de diseño.",
+    "jelouDescription": "Implementé soporte para cargar elementos, incluidos archivos PDF y multimedia, dentro del formulario de entrada de plantilla HSM (mensaje de alta estructura). Además, integré el nuevo diseño de la landing page en Next.js, lo que garantizó la correcta funcionalidad y la alineación con las especificaciones de diseño.",
     "nidoTitle": "Ingeniero en Nido Interactive (2 años)",
-    "nidoDescription": "Como ingeniero de interactividad, me especializo en dar vida a instalaciones interactivas mediante la programación de sistemas integrados como Raspberry Pi y Arduino. Con experiencia en el montaje y soldadura de circuitos personalizados y la integración de diversos sensores, creo entornos dinámicos y receptivos.",
+    "nidoDescription": "Como ingeniero de interactividad, me encargué en dar vida a instalaciones interactivas mediante la programación de sistemas integrados como Raspberry Pi y Arduino. Con experiencia en el montaje y soldadura de circuitos personalizados y la integración de diversos sensores, creo entornos dinámicos y receptivos.",
     "viewProject": "Ver proyecto",
     "seeDescription": "Mostrar descripción",
     "hideDescription": "Ocultar descripción"
@@ -30,7 +30,7 @@
     "journeyDescription": "Mi trayectoria profesional resalta mi capacidad de adaptación y aprendizaje rápido. Desde trabajar como acústico hasta convertirme en ingeniero interactivo y ahora en desarrollador de software, siempre he aceptado nuevos desafíos y tecnologías.",
     "firstTitle": "Graduado como Ingeniero Acústico",
     "firstDescription": "Trabajé en proyectos como la construcción de escuelas y estudios de música, incluida la Berklee Music Lab School en Quito, Ecuador.",
-    "firstImageDescription": "Estudio musical de MUsic Lab el cual ayudé a construir.",
+    "firstImageDescription": "Estudio musical de Music Lab el cual ayudé a construir.",
     "secondTitle": "Introducción al Mundo Tecnológico",
     "secondDescription": "Contratado para participar en la construcción de la exposición Zoom en el Museo del Agua Yaku en Ecuador. Diseñé altavoces especiales y programé un sistema interactivo utilizando Raspberry Pi.",
     "secondImageDescription": "Exposición de museo para la que diseñé los altavoces tipo cúpula y desarrollé la interactividad.",
@@ -40,9 +40,9 @@
     "fourthTitle": "Transición al Desarollo Web",
     "fourthDescription": "Durante la pandemia, decidí pasarme al desarrollo web. Asistí a un curso intensivo de 4 meses de Full Stack (MERN) en el cual desarrollé un fuerte fundamento de programación que he seguido puliendo desde entonces.",
     "fourthImageDescription": "La primera de todas mis certificaciones en desarrollo web.",
-    "fifthTitle": "DEsarrollador Frontend en Jelou",
-    "fifthDescription": "A month after finishing the course, hired as a Frontend developer at Hello. Web Development journey began in earnest.",
-    "fifthImageDescription": "Un mes después de terminar el curso, me contrataron como desarrollador frontend en Jelou. Mi camino en el desarrollo web comenzó!."
+    "fifthTitle": "Desarrollador Frontend en Jelou",
+    "fifthDescription": "Un mes después de terminar el curso, me contrataron como desarrollador frontend en Jelou. Mi camino en el desarrollo web comenzó!",
+    "fifthImageDescription": "Mi primera experiencia profesional como desarrollador Frontend."
   },
   "Navigation": {
     "home": "Inicio",

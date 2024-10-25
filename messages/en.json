@@ -16,11 +16,11 @@
     "dashboardTitle": "Invoices Dashboard (Migration to Prisma)",
     "dashboardDescription": "As part of a Next.js course, I developed a dashboard that relies on the latest features of Next.js. The initial implementation used the @vercel/postgres library for database queries. However, I challenged myself to go beyond the course material and successfully integrated Prisma (@prisma/client) as a replacement. This migration was an enriching experience in enhancing database management with Prisma's more advanced querying capabilities.",
     "twilioTitle": "Full Stack Developer at Twilio (2 years)",
-    "twilioDescription": "As a consultant, I contributed to the successful migration of a documentation site from Django to Next.js. I developed new React components, adhering to best practices in Test-Driven Development (TDD), SEO optimization, accessibility, responsiveness, and performance. In addition, I led the Quality Assurance (QA) process, ensuring that the newly developed pages functioned correctly and met high standards.",
+    "twilioDescription": "As a consultant, I contributed to the successful migration of Twilio's documentation site from Django to Next.js. I developed new React components, adhering to best practices in Test-Driven Development (TDD), SEO optimization, accessibility, responsiveness, and performance. In addition, I led the Quality Assurance (QA) process, ensuring that the newly developed pages functioned correctly and met high standards.",
     "jelouTitle": "Frontend Developer at Jelou (3 months)",
     "jelouDescription": "Implemented support for uploading elements, including PDFs and multimedia, within the HSM (High Structure Message) template input form. Additionally, I integrated the new landing page design into a Next.js framework, ensuring seamless functionality and alignment with the design specifications.",
     "nidoTitle": "Engineer at Nido Interactive (2 years)",
-    "nidoDescription": "As an Interactivity Engineer, I specialize in bringing interactive installations to life by programming embedded systems such as Raspberry Pi and Arduino. With expertise in assembling and soldering custom circuits and integrating various sensors, I create dynamic and responsive environments.",
+    "nidoDescription": "As an Interactivity Engineer, I specialized in bringing interactive installations to life by programming embedded systems such as Raspberry Pi and Arduino. With expertise in assembling and soldering custom circuits and integrating various sensors, I created dynamic and responsive environments.",
     "viewProject": "View Project",
     "seeDescription": "See description",
     "hideDescription": "Hide description"

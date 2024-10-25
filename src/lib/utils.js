@@ -78,22 +78,6 @@ export const getPortfolioProjects = (t) => ({
       gitUrl: 'https://github.com/Eavilesz/tasks',
     },
     {
-      title: t('sttoriaTitle'),
-      description: t('SttoriaDescription'),
-      image: sttoria,
-      tags: [
-        { name: 'Nextjs', icon: RiNextjsLine, iconColor: '#000000' },
-        { name: 'JavaScript', icon: RiJavascriptLine, iconColor: '#F0DB4F' },
-        {
-          name: 'Tailwind CSS',
-          icon: RiTailwindCssFill,
-          iconColor: '#38bdf9',
-        },
-      ],
-      url: 'https://sttoria.vercel.app/',
-      gitUrl: 'https://github.com/Eavilesz/sttoria',
-    },
-    {
       title: t('dashboardTitle'),
       description: t('dashboardDescription'),
       image: dashboard,
@@ -110,6 +94,22 @@ export const getPortfolioProjects = (t) => ({
       ],
       url: 'https://nextjs-dashboard-eta-pied-59.vercel.app/dashboard',
       gitUrl: 'https://github.com/Eavilesz/nextjs-dashboard',
+    },
+    {
+      title: t('sttoriaTitle'),
+      description: t('SttoriaDescription'),
+      image: sttoria,
+      tags: [
+        { name: 'Nextjs', icon: RiNextjsLine, iconColor: '#000000' },
+        { name: 'JavaScript', icon: RiJavascriptLine, iconColor: '#F0DB4F' },
+        {
+          name: 'Tailwind CSS',
+          icon: RiTailwindCssFill,
+          iconColor: '#38bdf9',
+        },
+      ],
+      url: 'https://sttoria.vercel.app/',
+      gitUrl: 'https://github.com/Eavilesz/sttoria',
     },
   ],
 });
