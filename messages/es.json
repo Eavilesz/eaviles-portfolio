@@ -2,7 +2,10 @@
   "HomePage": {
     "presentation": "Desarrollador Web",
     "description": "¡Bienvenidos! Cuento con más de dos años de experiencia profesional colaborando en equipos ágiles. Mi experiencia se centra en la creación de aplicaciones web dinámicas utilizando, con un fuerte enfoque en el rendimiento, la accesibilidad y la experiencia del usuario.",
-    "mainSkills": "Habilidades principales"
+    "mainSkills": "Habilidades principales",
+    "englishProficiency": "Inglés Avanzado: C1",
+    "fastLearning": "Rápido Aprendizaje",
+    "problemSolver": "Solucionador de Problemas"
   },
   "Portfolio": {
     "projectsTitle": "Proyectos",

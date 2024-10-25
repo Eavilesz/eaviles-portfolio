@@ -2,7 +2,10 @@
   "HomePage": {
     "presentation": "Web Developer",
     "description": "Welcome! I am a Web Developer with over two years of professional experience collaborating in agile teams. My expertise lies in building dynamic web applications, with a strong focus on performance, accessibility, and user experience.",
-    "mainSkills": "Main Skills"
+    "mainSkills": "Main Skills",
+    "englishProficiency": "C1 English Proficiency",
+    "fastLearning": "Fast Learning",
+    "problemSolver": "Problem Solver"
   },
   "Portfolio": {
     "projectsTitle": "Projects",

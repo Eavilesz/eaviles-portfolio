@@ -10,6 +10,9 @@ import { TbBrandTypescript } from 'react-icons/tb';
 import { RiTailwindCssFill } from 'react-icons/ri';
 import { FaGitAlt } from 'react-icons/fa6';
 import { SiJira } from 'react-icons/si';
+import { RiEnglishInput } from 'react-icons/ri';
+import { FaBrain } from 'react-icons/fa';
+import { RiLightbulbFlashFill } from 'react-icons/ri';
 import { useTranslations } from 'next-intl';
 
 import profilePic from '../../assets/profile-pic.jpg';
@@ -40,17 +43,28 @@ const socialLinks = [
   },
 ];
 
-const skills = [
-  { name: 'React', icon: FaReact, iconColor: '#00d8ff' },
-  { name: 'Next.js', icon: RiNextjsLine },
-  { name: 'TypeScript', icon: TbBrandTypescript, iconColor: '#3178c6' },
-  { name: 'Tailwind CSS', icon: RiTailwindCssFill, iconColor: '#38bdf9' },
-  { name: 'Git', icon: FaGitAlt, iconColor: '#F1502F' },
-  { name: 'Jira', icon: SiJira, iconColor: '#0052CC' },
-];
-
 export default function Home() {
   const t = useTranslations('HomePage');
+
+  const skills = [
+    { name: 'React', icon: FaReact, iconColor: '#00d8ff' },
+    { name: 'Next.js', icon: RiNextjsLine },
+    { name: 'TypeScript', icon: TbBrandTypescript, iconColor: '#3178c6' },
+    { name: 'Tailwind CSS', icon: RiTailwindCssFill, iconColor: '#38bdf9' },
+    { name: 'Git', icon: FaGitAlt, iconColor: '#F1502F' },
+    { name: 'Jira', icon: SiJira, iconColor: '#0052CC' },
+    {
+      name: t('englishProficiency'),
+      icon: RiEnglishInput,
+      iconColor: '#4DB6AC',
+    },
+    { name: t('fastLearning'), icon: FaBrain, iconColor: '#4DB6AC' },
+    {
+      name: t('problemSolver'),
+      icon: RiLightbulbFlashFill,
+      iconColor: '#4DB6AC',
+    },
+  ];
 
   return (
     <main className="min-h-screen bg-gradient-to-br text-white py-10 px-4">
@@ -103,7 +117,7 @@ export default function Home() {
               >
                 <Badge
                   variant="secondary"
-                  className="flex items-center gap-2 px-4 py-2 text-lg bg-opacity-20 bg-white backdrop-filter backdrop-blur-lg"
+                  className="flex items-center gap-2 px-4 py-2 text-lg bg-opacity-80 bg-white backdrop-filter backdrop-blur-lg"
                 >
                   <skill.icon size={24} color={skill.iconColor} />
                   {skill.name}
