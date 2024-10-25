@@ -87,7 +87,7 @@ export default function Home() {
         </h1>
         <p className="text-3xl mb-8 text-teal-300">{t('presentation')}</p>
         <p className="text-xl mb-12 leading-relaxed">{t('description')}</p>
-        <div className="flex space-x-6 mb-12">
+        <div className="flex space-x-6 mb-8">
           {socialLinks.map((link) => (
             <motion.a
               key={link.name}
@@ -104,7 +104,7 @@ export default function Home() {
           ))}
         </div>
         <div className="w-full mt-4">
-          <h2 className="text-4xl font-bold mb-8 text-blue-300">
+          <h2 className="text-4xl font-bold mb-6 text-blue-300">
             {t('mainSkills')}
           </h2>
           <div className="flex flex-wrap justify-center gap-4">
@@ -117,7 +117,7 @@ export default function Home() {
               >
                 <Badge
                   variant="secondary"
-                  className="flex items-center gap-2 px-4 py-2 text-lg bg-opacity-80 bg-white backdrop-filter backdrop-blur-lg"
+                  className="flex items-center gap-2 px-4 text-lg bg-opacity-80 bg-white backdrop-filter backdrop-blur-lg"
                 >
                   <skill.icon size={24} color={skill.iconColor} />
                   {skill.name}
