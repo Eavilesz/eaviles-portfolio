@@ -67,12 +67,12 @@ export default function Home() {
   ];
 
   return (
-    <main className="min-h-screen bg-gradient-to-br text-white py-10 px-4">
+    <main className="text-white py-6 px-4 w-full max-w-7xl mx-auto flex items-center justify-center">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="flex flex-col items-center text-center max-w-4xl mx-auto"
+        className="flex flex-col items-center text-center w-full"
       >
         <Image
           src={profilePic}
@@ -82,11 +82,15 @@ export default function Home() {
           className="rounded-full mb-8 border-4 border-teal-400"
           priority
         />
-        <h1 className="text-6xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-green-400">
+        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-green-400">
           Ernesto Avilés
         </h1>
-        <p className="text-3xl mb-8 text-teal-300">{t('presentation')}</p>
-        <p className="text-xl mb-12 leading-relaxed">{t('description')}</p>
+        <p className="text-2xl sm:text-3xl mb-8 text-teal-300">
+          {t('presentation')}
+        </p>
+        <p className="text-lg sm:text-xl mb-12 leading-relaxed max-w-3xl">
+          {t('description')}
+        </p>
         <div className="flex space-x-6 mb-8">
           {socialLinks.map((link) => (
             <motion.a
@@ -104,7 +108,7 @@ export default function Home() {
           ))}
         </div>
         <div className="w-full mt-4">
-          <h2 className="text-4xl font-bold mb-6 text-blue-300">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-blue-300">
             {t('mainSkills')}
           </h2>
           <div className="flex flex-wrap justify-center gap-4">

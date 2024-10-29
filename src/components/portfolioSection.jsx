@@ -29,7 +29,7 @@ export default function PortfolioSection({ portfolioObj }) {
 
   return (
     <section>
-      <h2 className="text-4xl font-bold mb-12 text-center text-teal-300">
+      <h2 className="text-4xl font-bold mb-12 text-center text-white">
         {portfolioObj.title}
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -64,12 +64,12 @@ export default function PortfolioSection({ portfolioObj }) {
                   />
                 </div>
                 <CardHeader className="mb-4">
-                  <CardTitle className="text-teal-300 mb-2 text-xl">
+                  <CardTitle className="text-white mb-2 text-xl">
                     {project.title}
                   </CardTitle>
                   <Button
                     variant="ghost"
-                    className="text-teal-400 hover:text-teal-300 p-0 h-auto"
+                    className="text-black hover:text-white p-1 h-auto w-fit flex mx-auto bg-slate-200 hover:bg-opacity-60 rounded"
                     onClick={() => toggleDescription(index)}
                   >
                     {expandedDescriptions[index] ? (
@@ -118,7 +118,7 @@ export default function PortfolioSection({ portfolioObj }) {
                     href={project.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-teal-400 hover:text-teal-300 flex items-center gap-1"
+                    className="text-white hover:text-teal-400 flex items-center gap-1"
                     aria-label={`View ${project.title} project`}
                   >
                     {t('viewProject')}
@@ -129,7 +129,7 @@ export default function PortfolioSection({ portfolioObj }) {
                       href={project.gitUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-teal-400 hover:text-teal-300 flex items-center gap-1"
+                      className="text-teal-400 hover:text-white flex items-center gap-1"
                       aria-label={`View ${project.title} GitHub repository`}
                     >
                       <Github size={20} />

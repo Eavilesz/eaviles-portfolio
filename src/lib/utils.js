@@ -19,8 +19,6 @@ import { SiJest } from 'react-icons/si';
 import { FaRaspberryPi } from 'react-icons/fa';
 import { SiArduino } from 'react-icons/si';
 import { FaPython } from 'react-icons/fa';
-import { SiPrisma } from 'react-icons/si';
-import { BiLogoPostgresql } from 'react-icons/bi';
 
 import spaceNews from '@/assets/spaceNews.avif';
 import sttoria from '@/assets/sttoria.avif';
@@ -28,7 +26,6 @@ import taskManager from '@/assets/task-manager.avif';
 import twilio from '@/assets/twilio.avif';
 import jelou from '@/assets/jelou.avif';
 import nido from '@/assets/nido.avif';
-import dashboard from '@/assets/dashboard.avif';
 
 export function cn(...inputs) {
   return twMerge(clsx(inputs));
@@ -76,24 +73,6 @@ export const getPortfolioProjects = (t) => ({
       ],
       url: 'https://tasks-chi-two.vercel.app/',
       gitUrl: 'https://github.com/Eavilesz/tasks',
-    },
-    {
-      title: t('dashboardTitle'),
-      description: t('dashboardDescription'),
-      image: dashboard,
-      tags: [
-        { name: 'Prisma', icon: SiPrisma, iconColor: '#800000' },
-        { name: 'PostgreSQL', icon: BiLogoPostgresql, iconColor: '#008bb9' },
-        { name: 'Nextjs', icon: RiNextjsLine, iconColor: '#000000' },
-        { name: 'TypeScript', icon: BiLogoTypescript, iconColor: '#3178c6' },
-        {
-          name: 'Tailwind CSS',
-          icon: RiTailwindCssFill,
-          iconColor: '#38bdf9',
-        },
-      ],
-      url: 'https://nextjs-dashboard-eta-pied-59.vercel.app/dashboard',
-      gitUrl: 'https://github.com/Eavilesz/nextjs-dashboard',
     },
     {
       title: t('sttoriaTitle'),

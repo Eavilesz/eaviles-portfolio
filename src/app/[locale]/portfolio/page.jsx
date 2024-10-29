@@ -10,7 +10,7 @@ export default function Projects() {
   const experience = getPortfolioExperience(t);
 
   return (
-    <main className="container mx-auto px-4 py-16 min-h-screen flex flex-col gap-10">
+    <main className="container mx-auto px-4 py-12 min-h-screen flex flex-col gap-10">
       <PortfolioSection portfolioObj={experience} />
       <PortfolioSection portfolioObj={projects} />
     </main>

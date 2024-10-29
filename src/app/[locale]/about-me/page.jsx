@@ -80,15 +80,15 @@ export default function AboutMe() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.2 }}
             >
-              <div className="w-full md:w-1/2 px-4 mb-8 md:mb-0">
+              <div className="w-full md:w-1/2 px-4 mb-8 md:mb-0 flex">
                 <motion.div
-                  className="bg-white bg-opacity-10 p-6 rounded-lg shadow-lg h-full"
+                  className="bg-white bg-opacity-30 p-6 rounded-lg shadow-lg h-fit text-white my-auto"
                   whileHover={{ scale: 1.03 }}
                   transition={{ type: 'spring', stiffness: 300 }}
                 >
-                  <h3 className="text-2xl font-bold mb-2">{event.year}</h3>
-                  <h4 className="text-xl font-semibold mb-2">{event.title}</h4>
-                  <p className="text-gray-300 mb-4">{event.description}</p>
+                  <h2 className="text-2xl font-bold mb-2">{event.year}</h2>
+                  <h3 className="text-xl font-semibold mb-2">{event.title}</h3>
+                  <p className="text-white mb-4">{event.description}</p>
                 </motion.div>
               </div>
               <div className="w-full md:w-1/2 px-4 flex flex-col justify-center items-center">
