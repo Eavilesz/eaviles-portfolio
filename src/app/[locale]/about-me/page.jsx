@@ -59,7 +59,6 @@ export default function AboutMe() {
           transition={{ duration: 0.5 }}
           className="mb-12"
         >
-          {' '}
           <h1 className="text-4xl font-bold text-center mb-8">{t('title')}</h1>
           <p className="text-xl text-gray-300 text-center">
             {t('journeyDescription')}
@@ -80,9 +79,14 @@ export default function AboutMe() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.2 }}
             >
-              <div className="w-full md:w-1/2 px-4 mb-8 md:mb-0 flex">
+              <div className="w-full md:w-1/2 px-4 mb-8 md:mb-0 flex relative">
+                {/* Circle */}
+                <div
+                  className="hidden md:block absolute top-1/2 transform -translate-y-1/2 w-4 h-4 bg-white rounded-full shadow-lg z-10"
+                  style={{ [index % 2 === 0 ? 'left' : 'right']: '1px' }}
+                ></div>
                 <motion.div
-                  className="bg-white bg-opacity-30 p-6 rounded-lg shadow-lg h-fit text-white my-auto"
+                  className="bg-white bg-opacity-30 p-6 rounded-lg shadow-lg h-fit text-white my-auto w-full"
                   whileHover={{ scale: 1.03 }}
                   transition={{ type: 'spring', stiffness: 300 }}
                 >
