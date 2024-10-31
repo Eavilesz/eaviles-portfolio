@@ -88,7 +88,7 @@ export default function Home() {
         <p className="text-2xl sm:text-3xl mb-8 text-teal-300">
           {t('presentation')}
         </p>
-        <p className="text-lg sm:text-xl mb-12 leading-relaxed max-w-3xl">
+        <p className="text-lg sm:text-xl mb-8 leading-relaxed max-w-3xl">
           {t('description')}
         </p>
         <div className="flex space-x-6 mb-8">
