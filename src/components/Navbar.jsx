@@ -68,7 +68,7 @@ export default function Navbar() {
             exit={{ opacity: 0, y: -20 }}
             className="lg:hidden mt-4 bg-black bg-opacity-90"
           >
-            <ul className="flex flex-col space-y-4 text-2xl">
+            <ul className="flex flex-col space-y-4 text-2xl p-4">
               {navItems.map((item) => (
                 <li key={item.name}>
                   <Link
