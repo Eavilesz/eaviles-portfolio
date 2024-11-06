@@ -51,7 +51,7 @@ export default function AboutMe() {
   ];
 
   return (
-    <div className="min-h-screen text-white py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-gray-100 text-gray-800 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -59,15 +59,17 @@ export default function AboutMe() {
           transition={{ duration: 0.5 }}
           className="mb-12"
         >
-          <h1 className="text-4xl font-bold text-center mb-8">{t('title')}</h1>
-          <p className="text-xl text-gray-300 text-center">
+          <h1 className="text-4xl font-bold text-center mb-8 text-blue-600">
+            {t('title')}
+          </h1>
+          <p className="text-xl text-gray-600 text-center">
             {t('journeyDescription')}
           </p>
         </motion.div>
 
         <div className="relative">
           {/* Vertical line */}
-          <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-white"></div>
+          <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-blue-200"></div>
 
           {timelineEvents.map((event, index) => (
             <motion.div
@@ -82,17 +84,21 @@ export default function AboutMe() {
               <div className="w-full md:w-1/2 px-4 mb-8 md:mb-0 flex relative">
                 {/* Circle */}
                 <div
-                  className="hidden md:block absolute top-1/2 transform -translate-y-1/2 w-4 h-4 bg-white rounded-full shadow-lg z-10"
+                  className="hidden md:block absolute top-1/2 transform -translate-y-1/2 w-4 h-4 bg-blue-600 rounded-full shadow-lg z-10"
                   style={{ [index % 2 === 0 ? 'left' : 'right']: '1px' }}
                 ></div>
                 <motion.div
-                  className="bg-white bg-opacity-30 p-6 rounded-lg shadow-lg h-fit text-white my-auto w-full"
+                  className="bg-white p-6 rounded-lg shadow-lg h-fit text-gray-800 my-auto w-full"
                   whileHover={{ scale: 1.03 }}
                   transition={{ type: 'spring', stiffness: 300 }}
                 >
-                  <h2 className="text-2xl font-bold mb-2">{event.year}</h2>
-                  <h3 className="text-xl font-semibold mb-2">{event.title}</h3>
-                  <p className="text-white mb-4">{event.description}</p>
+                  <h2 className="text-2xl font-bold mb-2 text-blue-600">
+                    {event.year}
+                  </h2>
+                  <h3 className="text-xl font-semibold mb-2 text-blue-800">
+                    {event.title}
+                  </h3>
+                  <p className="text-gray-600 mb-4">{event.description}</p>
                 </motion.div>
               </div>
               <div className="w-full md:w-1/2 px-4 flex flex-col justify-center items-center">
@@ -110,7 +116,7 @@ export default function AboutMe() {
                     sizes="(max-width: 768px) 100vw, 50vw"
                   />
                 </motion.div>
-                <p className="text-sm text-gray-300 text-center italic">
+                <p className="text-sm text-gray-500 text-center italic">
                   {event.imageDescription}
                 </p>
               </div>

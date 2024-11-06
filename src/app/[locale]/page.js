@@ -29,18 +29,6 @@ const socialLinks = [
     icon: Github,
     url: 'https://github.com/Eavilesz',
   },
-  {
-    name: 'Instagram',
-    icon: Instagram,
-    iconColor: '#8134AF',
-    url: 'https://www.instagram.com/ernesto_av/',
-  },
-  {
-    name: 'Facebook',
-    icon: Facebook,
-    iconColor: '#1877F2',
-    url: 'https://www.facebook.com/ernesto.aviles.14',
-  },
 ];
 
 export default function Home() {
@@ -67,7 +55,7 @@ export default function Home() {
   ];
 
   return (
-    <main className="text-white py-6 px-4 w-full max-w-7xl mx-auto flex items-center justify-center">
+    <main className="text-gray-800 py-6 px-4 w-full max-w-7xl mx-auto flex items-center justify-center">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -79,16 +67,16 @@ export default function Home() {
           alt="Ernesto Aviles"
           width={200}
           height={200}
-          className="rounded-full mb-8 border-4 border-teal-400"
+          className="rounded-full mb-8 border-4 border-blue-600"
           priority
         />
-        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-green-400">
+        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 text-transparent text-blue-500">
           Ernesto Avilés
         </h1>
-        <p className="text-2xl sm:text-3xl mb-8 text-teal-300">
+        <p className="text-2xl sm:text-3xl mb-8 text-blue-800">
           {t('presentation')}
         </p>
-        <p className="text-lg sm:text-xl mb-8 leading-relaxed max-w-3xl">
+        <p className="text-lg sm:text-xl mb-8 leading-relaxed max-w-3xl text-gray-600">
           {t('description')}
         </p>
         <div className="flex space-x-6 mb-8">
@@ -100,7 +88,7 @@ export default function Home() {
               rel="noopener noreferrer"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
-              className="text-white hover:text-teal-400 transition-colors"
+              className="text-gray-600 hover:text-blue-500 transition-colors"
               aria-label={`Visit ${link.name} profile`}
             >
               <link.icon size={32} />
@@ -108,7 +96,7 @@ export default function Home() {
           ))}
         </div>
         <div className="w-full mt-4">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-blue-300">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-blue-800">
             {t('mainSkills')}
           </h2>
           <div className="flex flex-wrap justify-center gap-4">
@@ -121,7 +109,7 @@ export default function Home() {
               >
                 <Badge
                   variant="secondary"
-                  className="flex items-center gap-2 px-4 text-lg bg-opacity-80 bg-white backdrop-filter backdrop-blur-lg"
+                  className="flex items-center gap-2 px-4 text-lg text-gray-800 bg-opacity-80 bg-white backdrop-filter backdrop-blur-lg"
                 >
                   <skill.icon size={24} color={skill.iconColor} />
                   {skill.name}

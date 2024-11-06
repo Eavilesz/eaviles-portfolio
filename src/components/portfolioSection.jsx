@@ -29,7 +29,7 @@ export default function PortfolioSection({ portfolioObj }) {
 
   return (
     <section>
-      <h2 className="text-4xl font-bold mb-12 text-center text-white">
+      <h2 className="text-4xl font-bold mb-12 text-center text-blue-600">
         {portfolioObj.title}
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -41,7 +41,7 @@ export default function PortfolioSection({ portfolioObj }) {
             transition={{ duration: 0.5, delay: index * 0.1 }}
           >
             <Card
-              className="bg-black/20 border-teal-600 overflow-hidden h-full flex flex-col"
+              className="bg-white border-gray-200 shadow-lg overflow-hidden h-full flex flex-col"
               onMouseEnter={() => setHoveredProject(index)}
               onMouseLeave={() => setHoveredProject(null)}
             >
@@ -64,12 +64,12 @@ export default function PortfolioSection({ portfolioObj }) {
                   />
                 </div>
                 <CardHeader className="mb-4">
-                  <CardTitle className="text-white mb-2 text-xl">
+                  <CardTitle className="text-blue-800 mb-2 text-xl">
                     {project.title}
                   </CardTitle>
                   <Button
                     variant="ghost"
-                    className="text-black hover:text-white p-1 h-auto w-fit flex mx-auto bg-slate-200 hover:bg-opacity-60 rounded"
+                    className="text-blue-600 hover:text-white hover:bg-blue-600 p-1 h-auto w-fit flex mx-auto bg-slate-200 hover:bg-opacity-60 rounded"
                     onClick={() => toggleDescription(index)}
                   >
                     {expandedDescriptions[index] ? (
@@ -94,7 +94,7 @@ export default function PortfolioSection({ portfolioObj }) {
                         exit={{ opacity: 0, height: 0 }}
                         transition={{ duration: 0.3 }}
                       >
-                        <CardDescription className="text-white text-md mb-4">
+                        <CardDescription className="text-gray-600 text-md mb-4">
                           {project.description}
                         </CardDescription>
                       </motion.div>
@@ -104,8 +104,8 @@ export default function PortfolioSection({ portfolioObj }) {
                     {project.tags.map((tag) => (
                       <Badge
                         key={tag.name}
-                        variant="secondary"
-                        className="flex items-center gap-1 h-min bg-teal-100/20 text-white"
+                        variant="outline"
+                        className="flex items-center gap-1 h-min text-blue-800 border bg-white"
                       >
                         <tag.icon color={tag.iconColor} size={'22px'} />
                         {tag.name}
@@ -118,7 +118,7 @@ export default function PortfolioSection({ portfolioObj }) {
                     href={project.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-white hover:text-teal-400 flex items-center gap-1"
+                    className="text-blue-600 hover:text-blue-800 flex items-center gap-1"
                     aria-label={`View ${project.title} project`}
                   >
                     {t('viewProject')}
@@ -129,7 +129,7 @@ export default function PortfolioSection({ portfolioObj }) {
                       href={project.gitUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-teal-400 hover:text-white flex items-center gap-1"
+                      className="text-gray-600 hover:text-blue-600 hover:text-white flex items-center gap-1"
                       aria-label={`View ${project.title} GitHub repository`}
                     >
                       <Github size={20} />
