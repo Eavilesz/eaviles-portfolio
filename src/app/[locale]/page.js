@@ -70,7 +70,7 @@ export default function Home() {
           className="rounded-full mb-8 border-4 border-blue-600"
           priority
         />
-        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 text-transparent text-blue-500">
+        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 text-blue-500">
           Ernesto Avilés
         </h1>
         <p className="text-2xl sm:text-3xl mb-8 text-blue-800">
