@@ -24,11 +24,14 @@ export default function Navbar() {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-white text-gray-800 py-4 z-50 h-16 shadow-md">
+    <nav className="fixed top-0 left-0 right-0 bg-white text-gray-800 py-4 z-50 h-16 shadow-md flex items-center">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
-          <Link href="/" className="text-2xl font-bold text-blue-600">
-            Ernesto Avilés
+          <Link
+            href="/"
+            className="text-2xl font-bold text-blue-600 text-3xl italic rounded-full border-0 border px-4 py-1 hover:text-blue-100 hover:bg-blue-600"
+          >
+            {'<EAV>'}
           </Link>
           <div className="lg:hidden">
             <button
