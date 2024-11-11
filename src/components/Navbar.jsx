@@ -69,7 +69,7 @@ export default function Navbar() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="lg:hidden mt-4 bg-white"
+            className="lg:hidden mt-4 bg-white fixed w-full backdrop-blur-md bg-opacity-60"
           >
             <ul className="flex flex-col space-y-4 text-lg p-4">
               {navItems.map((item) => (
