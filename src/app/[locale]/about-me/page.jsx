@@ -51,7 +51,7 @@ export default function AboutMe() {
       image: jelou,
     },
     {
-      year: 2022,
+      year: '2022 - 2024',
       title: t('sixthTitle'),
       description: t('sixthDescription'),
       imageDescription: t('sixthImageDescription'),
