@@ -19,6 +19,7 @@ export default function AboutMe() {
       description: t('firstDescription'),
       imageDescription: t('firstImageDescription'),
       image: musicLab,
+      priority: true,
     },
     {
       year: 2019,
@@ -111,9 +112,10 @@ export default function AboutMe() {
                     src={event.image}
                     alt={event.title}
                     fill
-                    style={{ objectFit: 'cover' }}
+                    style={{ objectFit: 'contain' }}
                     className="rounded-lg"
                     sizes="(max-width: 768px) 100vw, 50vw"
+                    priority={event.priority}
                   />
                 </motion.div>
                 <p className="text-sm text-gray-500 text-center italic">
