@@ -7,6 +7,7 @@ import yaku from '@/assets/yaku.jpg';
 import touchProjector from '@/assets/touch-projector.avif';
 import mern from '@/assets/mern.avif';
 import jelou from '@/assets/jelou.avif';
+import twilio from '@/assets/twilio.avif';
 import { useTranslations } from 'next-intl';
 
 export default function AboutMe() {
@@ -48,6 +49,13 @@ export default function AboutMe() {
       description: t('fifthDescription'),
       imageDescription: t('fifthImageDescription'),
       image: jelou,
+    },
+    {
+      year: 2022,
+      title: t('sixthTitle'),
+      description: t('sixthDescription'),
+      imageDescription: t('sixthImageDescription'),
+      image: twilio,
     },
   ];
 

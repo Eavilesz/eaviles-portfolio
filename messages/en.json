@@ -1,6 +1,7 @@
 {
   "HomePage": {
     "presentation": "Web Developer",
+    "knowMore": "Know more...",
     "description": "Welcome! I am a Web Developer with over two years of professional experience collaborating in agile teams. My expertise lies in building dynamic web applications, with a strong focus on performance, accessibility, and user experience.",
     "mainSkills": "Main Skills",
     "englishProficiency": "C1 English Proficiency",
@@ -45,7 +46,10 @@
     "fourthImageDescription": "The first of all my certifications in web development.",
     "fifthTitle": "Frontend Developer at Jelou",
     "fifthDescription": "A month after finishing the course, I was hired as a Frontend developer at Jelou. Web Development journey began in earnest.",
-    "fifthImageDescription": "My first professional experience as a Frontend Developer."
+    "fifthImageDescription": "My first professional experience as a Frontend Developer.",
+    "sixthTitle": "Full Stack Developer at Twilio",
+    "sixthDescription": "After three months at Jelou, I was hired as a remote Full Stack Developer to work on the Twilio Website, as a Stackbuilders contractor.",
+    "sixthImageDescription": "I helped build the new documentation site, that contains complex components like Dynamic Code Samples."
   },
 
   "Navigation": {

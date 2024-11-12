@@ -1,6 +1,7 @@
 {
   "HomePage": {
     "presentation": "Desarrollador Web",
+    "knowMore": "Conocer más...",
     "description": "¡Bienvenidos! Cuento con más de dos años de experiencia profesional colaborando en equipos ágiles. Mi experiencia se centra en la creación de aplicaciones web dinámicas con un enfoque en el rendimiento, la accesibilidad y la experiencia del usuario.",
     "mainSkills": "Habilidades principales",
     "englishProficiency": "Inglés Avanzado: C1",
@@ -45,7 +46,10 @@
     "fourthImageDescription": "La primera de todas mis certificaciones en desarrollo web.",
     "fifthTitle": "Desarrollador Frontend en Jelou",
     "fifthDescription": "Un mes después de terminar el curso, me contrataron como desarrollador frontend en Jelou. Mi camino en el desarrollo web comenzó!",
-    "fifthImageDescription": "Mi primera experiencia profesional como desarrollador Frontend."
+    "fifthImageDescription": "Mi primera experiencia profesional como desarrollador Frontend.",
+    "sixthTitle": "Desarrollador Full Stack en Twilio",
+    "sixthDescription": "Luego de mi tiempo en Jelou, fui contratado como desarrollador remoto Full Stack para trabajar en el sitio web de Twilo, como consultor de Stackbuilders.",
+    "sixthImageDescription": "Participé en la construcción del nuevo sitio de documentación de Twilio. Este es un ejemplo de las nuevas páginas, que contienen componentes como muestras de codigo generados dinámicamente."
   },
   "Navigation": {
     "home": "Inicio",

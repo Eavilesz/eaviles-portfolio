@@ -14,6 +14,7 @@ import { RiEnglishInput } from 'react-icons/ri';
 import { FaBrain } from 'react-icons/fa';
 import { RiLightbulbFlashFill } from 'react-icons/ri';
 import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/routing';
 
 import profilePic from '../../assets/profile-pic.jpg';
 
@@ -77,7 +78,15 @@ export default function Home() {
           {t('presentation')}
         </p>
         <p className="text-lg sm:text-xl mb-8 leading-relaxed max-w-3xl text-gray-600">
-          {t('description')}
+          {t('description')}{' '}
+          <span className="text-">
+            <Link
+              href="/portfolio"
+              className="text-blue-800 hover:text-blue-500 font-bold"
+            >
+              {t('knowMore')}
+            </Link>
+          </span>
         </p>
         <div className="flex space-x-6 mb-8">
           {socialLinks.map((link) => (
