@@ -25,6 +25,8 @@
     "jelouDescription": "Implemented support for uploading elements, including PDFs and multimedia, within the HSM (High Structure Message) template input form. Additionally, I integrated the new landing page design into a Next.js framework, ensuring seamless functionality and alignment with the design specifications.",
     "nidoTitle": "Engineer at Nido Interactive (2 years)",
     "nidoDescription": "As an Interactivity Engineer, I specialized in bringing interactive installations to life by programming embedded systems such as Raspberry Pi and Arduino. With expertise in assembling and soldering custom circuits and integrating various sensors, I created dynamic and responsive environments.",
+    "outlierTitle": "AI Model Training (Present) - Independent Contractor",
+    "outlierDescription": "Currently improving generative AI models using my coding expertise and prompt engineering knowledge to train large language models.",
     "viewProject": "View Project",
     "seeDescription": "See description",
     "hideDescription": "Hide description"

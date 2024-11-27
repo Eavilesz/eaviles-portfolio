@@ -25,6 +25,8 @@
     "jelouDescription": "Implementé soporte para cargar elementos, incluidos archivos PDF y multimedia, dentro del formulario de entrada de plantilla HSM (mensaje de alta estructura). Además, integré el nuevo diseño de la landing page en Next.js, lo que garantizó la correcta funcionalidad y la alineación con las especificaciones de diseño.",
     "nidoTitle": "Ingeniero en Nido Interactive (2 años)",
     "nidoDescription": "Como ingeniero de interactividad, me encargué en dar vida a instalaciones interactivas mediante la programación de sistemas integrados como Raspberry Pi y Arduino. Con experiencia en el montaje y soldadura de circuitos personalizados y la integración de diversos sensores, creo entornos dinámicos y receptivos.",
+    "outlierTitle": "Entrenamiento de Modelos de IA (Actualidad) - Consultor Independiente",
+    "outlierDescription": "Actualmente estoy mejorando modelos de IA generativos utilizando mi experiencia en codificación y mi conocimiento de prompt engineering para entrenar modelos de lenguaje grandes LLMs.",
     "viewProject": "Ver proyecto",
     "seeDescription": "Mostrar descripción",
     "hideDescription": "Ocultar descripción"

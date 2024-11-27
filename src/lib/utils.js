@@ -2,7 +2,7 @@ import { clsx } from 'clsx';
 import { twMerge } from 'tailwind-merge';
 
 import { RiNextjsLine } from 'react-icons/ri';
-import { RiJavascriptLine } from 'react-icons/ri';
+import { IoLogoJavascript } from 'react-icons/io5';
 import { TbBrandMongodb } from 'react-icons/tb';
 import { RiTailwindCssFill } from 'react-icons/ri';
 import { SiTestinglibrary } from 'react-icons/si';
@@ -19,6 +19,8 @@ import { SiJest } from 'react-icons/si';
 import { FaRaspberryPi } from 'react-icons/fa';
 import { SiArduino } from 'react-icons/si';
 import { FaPython } from 'react-icons/fa';
+import { LuBrainCircuit } from 'react-icons/lu';
+import { TbPrompt } from 'react-icons/tb';
 
 import spaceNews from '@/assets/spaceNews.avif';
 import sttoria from '@/assets/sttoria.avif';
@@ -26,6 +28,7 @@ import taskManager from '@/assets/task-manager.avif';
 import twilio from '@/assets/twilio.avif';
 import jelou from '@/assets/jelou.avif';
 import nido from '@/assets/nido.avif';
+import outlier from '@/assets/outlier.svg';
 
 export function cn(...inputs) {
   return twMerge(clsx(inputs));
@@ -40,7 +43,7 @@ export const getPortfolioProjects = (t) => ({
       image: spaceNews,
       tags: [
         { name: 'Nextjs', icon: RiNextjsLine, iconColor: '#000000' },
-        { name: 'JavaScript', icon: RiJavascriptLine, iconColor: '#F0DB4F' },
+        { name: 'JavaScript', icon: IoLogoJavascript, iconColor: '#F0DB4F' },
         { name: 'MongoDB', icon: TbBrandMongodb, iconColor: '#3FA037' },
         {
           name: 'Tailwind CSS',
@@ -80,7 +83,7 @@ export const getPortfolioProjects = (t) => ({
       image: sttoria,
       tags: [
         { name: 'Nextjs', icon: RiNextjsLine, iconColor: '#000000' },
-        { name: 'JavaScript', icon: RiJavascriptLine, iconColor: '#F0DB4F' },
+        { name: 'JavaScript', icon: IoLogoJavascript, iconColor: '#F0DB4F' },
         {
           name: 'Tailwind CSS',
           icon: RiTailwindCssFill,
@@ -96,6 +99,30 @@ export const getPortfolioProjects = (t) => ({
 export const getPortfolioExperience = (t) => ({
   title: t('experienceTitle'),
   projects: [
+    {
+      title: t('outlierTitle'),
+      description: t.rich('outlierDescription'),
+      image: outlier,
+      tags: [
+        {
+          name: 'Artificial Intelligence',
+          icon: LuBrainCircuit,
+          iconColor: '#38bdf9',
+        },
+        {
+          name: 'Prompt Engineering',
+          icon: TbPrompt,
+          iconColor: '#38bdf9',
+        },
+        { name: 'JavaScript', icon: IoLogoJavascript, iconColor: '#F0DB4F' },
+        {
+          name: 'Python',
+          icon: FaPython,
+          iconColor: '#4B8BBE',
+        },
+      ],
+      url: 'https://outlier.ai/',
+    },
     {
       title: t('twilioTitle'),
       description: t.rich('twilioDescription'),
@@ -122,7 +149,7 @@ export const getPortfolioExperience = (t) => ({
       image: jelou,
       tags: [
         { name: 'React', icon: FaReact, iconColor: '#61dbfb' },
-        { name: 'JavaScript', icon: RiJavascriptLine, iconColor: '#F0DB4F' },
+        { name: 'JavaScript', icon: IoLogoJavascript, iconColor: '#F0DB4F' },
         {
           name: 'Tailwind CSS',
           icon: RiTailwindCssFill,
@@ -152,7 +179,7 @@ export const getPortfolioExperience = (t) => ({
         {
           name: 'Python',
           icon: FaPython,
-          iconColor: '#ffde57',
+          iconColor: '#4B8BBE',
         },
       ],
       url: 'https://nidointeractive.com/en/projects',
