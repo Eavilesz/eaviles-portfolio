@@ -13,6 +13,8 @@ import { SiJira } from 'react-icons/si';
 import { RiEnglishInput } from 'react-icons/ri';
 import { FaBrain } from 'react-icons/fa';
 import { RiLightbulbFlashFill } from 'react-icons/ri';
+import { GrDocumentDownload } from 'react-icons/gr';
+
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/routing';
 
@@ -103,6 +105,19 @@ export default function Home() {
               <link.icon size={32} />
             </motion.a>
           ))}
+          <a
+            href="/Ernesto_Aviles_Resume.pdf"
+            download="Ernesto-Aviles-Resume.pdf"
+          >
+            <motion.div
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+              className="text-blue-500 hover:text-gray-600 transition-colors"
+              aria-label={`Download resume.`}
+            >
+              <GrDocumentDownload size={32} />
+            </motion.div>
+          </a>
         </div>
         <div className="w-full mt-4">
           <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-blue-800">
