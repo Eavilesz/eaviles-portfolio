@@ -55,28 +55,28 @@ export const getPortfolioProjects = (t) => ({
       url: 'https://news-two-neon.vercel.app/',
       gitUrl: 'https://github.com/Eavilesz/news',
     },
-    {
-      title: t('tasksTitle'),
-      description: t('taskManagerDescription'),
-      image: taskManager,
-      tags: [
-        { name: 'TypeScript', icon: BiLogoTypescript, iconColor: '#3178c6' },
-        { name: 'Nextjs', icon: RiNextjsLine, iconColor: '#000000' },
-        {
-          name: 'Tailwind CSS',
-          icon: RiTailwindCssFill,
-          iconColor: '#38bdf9',
-        },
-        { name: 'API Integration', icon: FaGear, iconColor: '#38bdf9' },
-        {
-          name: 'Testing Library',
-          icon: SiTestinglibrary,
-          iconColor: '#d52e2c',
-        },
-      ],
-      url: 'https://tasks-chi-two.vercel.app/',
-      gitUrl: 'https://github.com/Eavilesz/tasks',
-    },
+    // {
+    //   title: t('tasksTitle'),
+    //   description: t('taskManagerDescription'),
+    //   image: taskManager,
+    //   tags: [
+    //     { name: 'TypeScript', icon: BiLogoTypescript, iconColor: '#3178c6' },
+    //     { name: 'Nextjs', icon: RiNextjsLine, iconColor: '#000000' },
+    //     {
+    //       name: 'Tailwind CSS',
+    //       icon: RiTailwindCssFill,
+    //       iconColor: '#38bdf9',
+    //     },
+    //     { name: 'API Integration', icon: FaGear, iconColor: '#38bdf9' },
+    //     {
+    //       name: 'Testing Library',
+    //       icon: SiTestinglibrary,
+    //       iconColor: '#d52e2c',
+    //     },
+    //   ],
+    //   url: 'https://tasks-chi-two.vercel.app/',
+    //   gitUrl: 'https://github.com/Eavilesz/tasks',
+    // },
     {
       title: t('sttoriaTitle'),
       description: t('SttoriaDescription'),
