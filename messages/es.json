@@ -15,6 +15,8 @@
     "newsDescription": "Una aplicación web que ofrece las últimas noticias relacionadas con el espacio, creada con un frontend y backend de Next.js. La aplicación aprovecha una base de datos MongoDB y utiliza un cron job de Vercel para actualizar automáticamente el contenido de las noticias dos veces al día mediante el uso de la API de noticias.",
     "sttoriaTitle": "Landing Page de Sttoria",
     "SttoriaDescription": "Elegante landing page para el Estudio de Fotografía Sttoria, con una galería de imágenes estilo bento para mostrar sus servicios y un reproductor de video minimalista para una presentación limpia y profesional.",
+    "flightsTitle": "Flights app",
+    "flightsDescription": "Esta aplicación de búsqueda de vuelos simplifica la búsqueda de vuelos entre aeropuertos mediante la API Sky-Scrapper. Creada con React y diseñada con Material UI, cuenta con validación de entradas, debouncing en los inputs y un diseño responsivo.",
     "tasksTitle": "Administrador de Tareas Estilo Kanban",
     "taskManagerDescription": "Una robusta aplicación de gestión de tareas que cuenta con un diseño de tablero Kanban que admite operaciones CRUD, filtrado avanzado, paginación y autenticación de Google para el acceso de los usuarios.",
     "dashboardTitle": "Dashboard de Facturas (Migración a Prisma)",

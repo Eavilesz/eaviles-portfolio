@@ -24,6 +24,7 @@ import { TbPrompt } from 'react-icons/tb';
 
 import spaceNews from '@/assets/spaceNews.avif';
 import sttoria from '@/assets/sttoria.avif';
+import flightsApp from '@/assets/flights-app.avif';
 import taskManager from '@/assets/task-manager.avif';
 import twilio from '@/assets/twilio.avif';
 import jelou from '@/assets/jelou.avif';
@@ -33,6 +34,10 @@ import outlier from '@/assets/outlier.svg';
 export function cn(...inputs) {
   return twMerge(clsx(inputs));
 }
+
+const materialUIIcon = () => {
+  return <img style={{ width: '22px' }} src="/material-ui.svg"></img>;
+};
 
 export const getPortfolioProjects = (t) => ({
   title: t('projectsTitle'),
@@ -78,20 +83,18 @@ export const getPortfolioProjects = (t) => ({
     //   gitUrl: 'https://github.com/Eavilesz/tasks',
     // },
     {
-      title: t('sttoriaTitle'),
-      description: t('SttoriaDescription'),
-      image: sttoria,
+      title: t('flightsTitle'),
+      description: t('flightsDescription'),
+      image: flightsApp,
       tags: [
         { name: 'Nextjs', icon: RiNextjsLine, iconColor: '#000000' },
-        { name: 'JavaScript', icon: IoLogoJavascript, iconColor: '#F0DB4F' },
-        {
-          name: 'Tailwind CSS',
-          icon: RiTailwindCssFill,
-          iconColor: '#38bdf9',
-        },
+        { name: 'TypeScript', icon: BiLogoTypescript, iconColor: '#3178c6' },
+        { name: 'Material UI', icon: materialUIIcon, iconColor: '#F0DB4F' },
+        { name: 'API Integration', icon: FaGear, iconColor: '#38bdf9' },
       ],
-      url: 'https://sttoria.vercel.app/',
-      gitUrl: 'https://github.com/Eavilesz/sttoria',
+      url: 'https://flights-app-kohl.vercel.app/',
+      gitUrl:
+        'https://github.com/Eavilesz/flights-app?tab=readme-ov-file#flight-search-application',
     },
   ],
 });

@@ -129,7 +129,7 @@ export default function PortfolioSection({ portfolioObj }) {
                       href={project.gitUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-gray-600 hover:text-blue-600 hover:text-white flex items-center gap-1"
+                      className="text-gray-600 hover:text-blue-600 hover:text-blue-800 flex items-center gap-1"
                       aria-label={`View ${project.title} GitHub repository`}
                     >
                       <Github size={20} />
