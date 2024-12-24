@@ -21,6 +21,7 @@ import { SiArduino } from 'react-icons/si';
 import { FaPython } from 'react-icons/fa';
 import { LuBrainCircuit } from 'react-icons/lu';
 import { TbPrompt } from 'react-icons/tb';
+import { BsStars } from 'react-icons/bs';
 
 import spaceNews from '@/assets/spaceNews.avif';
 import sttoria from '@/assets/sttoria.avif';
@@ -30,6 +31,7 @@ import twilio from '@/assets/twilio.avif';
 import jelou from '@/assets/jelou.avif';
 import nido from '@/assets/nido.avif';
 import outlier from '@/assets/outlier.svg';
+import spotifAI from '@/assets/spotifAI.avif';
 
 export function cn(...inputs) {
   return twMerge(clsx(inputs));
@@ -42,6 +44,24 @@ const materialUIIcon = () => {
 export const getPortfolioProjects = (t) => ({
   title: t('projectsTitle'),
   projects: [
+    {
+      title: t('spotifAITitle'),
+      description: t('spotifAIDescription'),
+      image: spotifAI,
+      tags: [
+        { name: 'Nextjs', icon: RiNextjsLine, iconColor: '#000000' },
+        { name: 'TypeScript', icon: BiLogoTypescript, iconColor: '#3178c6' },
+        {
+          name: 'Tailwind CSS',
+          icon: RiTailwindCssFill,
+          iconColor: '#38bdf9',
+        },
+        { name: 'API Integration', icon: FaGear, iconColor: '#38bdf9' },
+        { name: 'AI Integration', icon: BsStars, iconColor: '#38bdf9' },
+      ],
+      url: 'https://spotifai-er.vercel.app/',
+      gitUrl: 'https://github.com/Eavilesz/spotifai',
+    },
     {
       title: t('newsTitle'),
       description: t.rich('newsDescription'),
